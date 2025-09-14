@@ -1,4 +1,4 @@
-# 🌊 Triton Mining Co. Website
+# Triton Mining Co. Website
 
 [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.1.5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -9,47 +9,46 @@
 
 > **A cutting-edge, minimalistic website showcasing the complete Triton ecosystem for sustainable ocean mining.** Built with modern web technologies and featuring Cursor.ai-inspired design principles with custom SVG icons and real-time data visualizations.
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-View_Website-00b4d8?style=for-the-badge&logo=vercel&logoColor=white)](https://tritonmining.com)
-[![Documentation](https://img.shields.io/badge/📚_Documentation-Read_More-007ea7?style=for-the-badge&logo=gitbook&logoColor=white)](#documentation)
-[![Contributing](https://img.shields.io/badge/🤝_Contributing-Guidelines-0096c7?style=for-the-badge&logo=github&logoColor=white)](#contributing)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-View_Website-00b4d8?style=for-the-badge&logo=vercel&logoColor=white)](https://tritonmining.com)
+[![Documentation](https://img.shields.io/badge/Documentation-Read_More-007ea7?style=for-the-badge&logo=gitbook&logoColor=white)](#documentation)
+[![Contributing](https://img.shields.io/badge/Contributing-Guidelines-0096c7?style=for-the-badge&logo=github&logoColor=white)](#contributing)
 
-## 🌊 Overview
+## Overview
 
 This enterprise-grade website presents **Triton Mining Co.'s** comprehensive ecosystem of cutting-edge technologies for sustainable deep-sea mining operations. Our platform demonstrates the future of responsible ocean resource extraction through:
 
-### 🏗️ **Core Ecosystem Products**
+### **Core Ecosystem Products**
 
 | Product | Description | Technology Focus |
 |---------|-------------|------------------|
-| **🛡️ DeepSeaGuard** | Real-time compliance monitoring & alert system | AI-powered regulatory adherence |
-| **🌐 SeaLink** | Autonomous buoy mesh network for communication | IoT & wireless connectivity |
-| **🏖️ Shellby** | Coastal sentinel system for environmental protection | Environmental monitoring |
-| **🤖 Luna AUV** | Deep-sea autonomous underwater vehicles | Robotics & autonomy |
-| **🦀 CrabBots** | Precision nodule collectors with AI harvesting | Precision robotics |
-| **🏭 Processing Stations** | Inland refineries for sustainable mineral processing | Industrial automation |
-| **💾 Data Infrastructure** | Secure databases, APIs, and cloud systems | Data management |
-| **🤝 External Systems** | Integration with regulators, NGOs, and partners | System integration |
-| **🔧 Triton Services** | Consulting services and open-source tools | Professional services |
+| **DeepSeaGuard** | Real-time compliance monitoring & alert system | AI-powered regulatory adherence |
+| **SeaLink** | Autonomous buoy mesh network for communication | IoT & wireless connectivity |
+| **Shellby** | Coastal sentinel system for environmental protection | Environmental monitoring |
+| **Luna AUV** | Deep-sea autonomous underwater vehicles | Robotics & autonomy |
+| **CrabBots** | Precision nodule collectors with AI harvesting | Precision robotics |
+| **Processing Stations** | Inland refineries for sustainable mineral processing | Industrial automation |
+| **Data Infrastructure** | Secure databases, APIs, and cloud systems | Data management |
+| **External Systems** | Integration with regulators, NGOs, and partners | System integration |
+| **Triton Services** | Consulting services and open-source tools | Professional services |
 
-## 🚀 **Key Features & Capabilities**
+## **Key Features & Capabilities**
 
-### 🎨 **Design Excellence**
-- **✨ Cursor.ai-inspired minimalistic design** with sophisticated dark ocean theme
-- **🎯 Custom SVG icon system** for all ecosystem products with consistent styling
-- **🌊 Smooth, fluid animations** powered by Framer Motion
-- **📱 Fully responsive design** optimized for desktop, tablet, and mobile
-- **📊 Scroll progress indicator** and seamless smooth scrolling
-- **🎭 Professional typography** using Inter + Orbitron font pairing
+### **Design Excellence**
+- **Custom SVG icon system** for all ecosystem products with consistent styling
+- **Smooth, fluid animations** powered by Framer Motion
+- **Fully responsive design** optimized for desktop, tablet, and mobile
+- **Scroll progress indicator** and seamless smooth scrolling
+- **Professional typography** using Inter + Orbitron font pairing
 
-### 🔧 **Interactive Capabilities**
-- **🗺️ Live operations map** with Leaflet.js showing real-time AUV positions
-- **📈 Real-time data visualizations** using Chart.js with 6 interactive charts
-- **🛡️ Compliance dashboard** with live alerts and monitoring systems
-- **🎯 Interactive ecosystem overview** with sophisticated hover effects
-- **📝 Advanced contact form** with real-time validation and submission handling
-- **🔍 Global search functionality** with intelligent suggestions
+### **Interactive Capabilities**
+- **Live operations map** with Leaflet.js showing real-time AUV positions
+- **Real-time data visualizations** using Chart.js with 6 interactive charts
+- **Compliance dashboard** with live alerts and monitoring systems
+- **Interactive ecosystem overview** with sophisticated hover effects
+- **Advanced contact form** with real-time validation and submission handling
+- **Global search functionality** with intelligent suggestions
 
-### 🛠️ **Technology Stack**
+### **Technology Stack**
 
 | Technology | Version | Purpose | Status |
 |------------|---------|---------|--------|
@@ -61,9 +60,9 @@ This enterprise-grade website presents **Triton Mining Co.'s** comprehensive eco
 | **Leaflet** | Latest | Interactive maps | ✅ Production |
 | **Lucide React** | Latest | Icon system | ✅ Production |
 
-## 🛠️ **Development & Deployment**
+## **Development & Deployment**
 
-### 📋 **Prerequisites**
+### **Prerequisites**
 
 | Requirement | Version | Purpose |
 |-------------|---------|---------|
@@ -71,7 +70,7 @@ This enterprise-grade website presents **Triton Mining Co.'s** comprehensive eco
 | **npm** | 8.0+ | Package manager |
 | **Git** | 2.0+ | Version control |
 
-### ⚡ **Quick Start**
+### **Quick Start**
 
 ```bash
 # 1. Clone the repository
@@ -87,7 +86,7 @@ npm run dev
 # 4. Open browser to http://localhost:5173
 ```
 
-### 🏗️ **Build Commands**
+### **Build Commands**
 
 | Command | Purpose | Output |
 |---------|---------|--------|
@@ -96,7 +95,7 @@ npm run dev
 | `npm run preview` | Preview production build | Local preview server |
 | `npm run lint` | Run ESLint | Code quality report |
 
-### 🚀 **Deployment Options**
+### **Deployment Options**
 
 | Platform | Status | Command | Notes |
 |----------|--------|---------|-------|
@@ -105,7 +104,7 @@ npm run dev
 | **AWS S3** | ✅ Supported | `aws s3 sync dist/ s3://bucket` | Static hosting |
 | **GitHub Pages** | ✅ Supported | GitHub Actions | Automated deployment |
 
-## 📁 **Project Architecture**
+## **Project Architecture**
 
 ```
 triton-website/
@@ -133,7 +132,7 @@ triton-website/
 └── 📄 README.md                 # 📚 This documentation
 ```
 
-### 🏗️ **Component Architecture**
+### **Component Architecture**
 
 | Component | Responsibility | Dependencies |
 |-----------|----------------|--------------|
@@ -146,9 +145,9 @@ triton-website/
 | **ArticlesSection** | Blog content display | Content management |
 | **ContactSection** | Contact form & information | Form validation |
 
-## 🎨 **Design System & Brand Guidelines**
+## **Design System & Brand Guidelines**
 
-### 🌈 **Color Palette**
+### **Color Palette**
 
 | Color | Hex Code | Usage | CSS Variable |
 |-------|----------|-------|--------------|
@@ -158,7 +157,7 @@ triton-website/
 | **Ocean Text** | `#e0f7ff` | Primary text color | `--ocean-text` |
 | **Ocean Accent** | `#0096c7` | Hover states, highlights | `--ocean-accent` |
 
-### ✍️ **Typography System**
+### **Typography System**
 
 | Element | Font Family | Weight | Size | Usage |
 |---------|-------------|--------|------|-------|
@@ -168,7 +167,7 @@ triton-website/
 | **Body** | Inter | 400 | 1rem | Body text |
 | **Caption** | Inter | 300 | 0.875rem | Small text |
 
-### 🎯 **Icon System**
+### **Icon System**
 
 All ecosystem products feature custom SVG icons with:
 - **Consistent 32x32px** base size
@@ -177,30 +176,30 @@ All ecosystem products feature custom SVG icons with:
 - **Minimalistic design** following Cursor.ai principles
 - **Scalable vector format** for crisp rendering
 
-## 📊 **Data Visualizations & Analytics**
+## **Data Visualizations & Analytics**
 
 The website features **6 sophisticated interactive charts** powered by Chart.js:
 
 | Chart | Type | Data Source | Purpose |
 |-------|------|-------------|---------|
-| **📈 Supply vs Demand** | Line Chart | Market data | Critical mineral market trends |
-| **📊 Environmental Impact** | Bar Chart | Comparative analysis | vs traditional mining methods |
-| **🍩 Compliance Status** | Doughnut Chart | Real-time monitoring | ISA compliance dashboard |
-| **🕸️ Environmental Monitoring** | Radar Chart | Sensor data | Multi-metric environmental health |
-| **📊 AUV Fleet Status** | Bar Chart | Fleet telemetry | Live fleet performance metrics |
-| **📉 Sediment Plume Tracking** | Line Chart | Environmental sensors | 24-hour dispersion monitoring |
+| **Supply vs Demand** | Line Chart | Market data | Critical mineral market trends |
+| **Environmental Impact** | Bar Chart | Comparative analysis | vs traditional mining methods |
+| **Compliance Status** | Doughnut Chart | Real-time monitoring | ISA compliance dashboard |
+| **Environmental Monitoring** | Radar Chart | Sensor data | Multi-metric environmental health |
+| **AUV Fleet Status** | Bar Chart | Fleet telemetry | Live fleet performance metrics |
+| **Sediment Plume Tracking** | Line Chart | Environmental sensors | 24-hour dispersion monitoring |
 
-### 🗺️ **Interactive Operations Map**
+### **Interactive Operations Map**
 
 Features a **Leaflet-powered map** centered on the Clarion-Clipperton Zone (CCZ):
 
-- **🤖 Live AUV positions** with real-time status indicators
-- **🌊 Sediment plume visualization** with concentration overlays
-- **📡 Real-time telemetry data** in interactive popups
-- **📍 Custom markers** with status-specific color coding
-- **🔍 Zoom and pan controls** for detailed exploration
+- **Live AUV positions** with real-time status indicators
+- **Sediment plume visualization** with concentration overlays
+- **Real-time telemetry data** in interactive popups
+- **Custom markers** with status-specific color coding
+- **Zoom and pan controls** for detailed exploration
 
-### 📱 **Responsive Design System**
+### **Responsive Design System**
 
 | Breakpoint | Screen Size | Layout | Features |
 |------------|-------------|--------|----------|
@@ -208,9 +207,9 @@ Features a **Leaflet-powered map** centered on the Clarion-Clipperton Zone (CCZ)
 | **Tablet** | 768px - 1024px | Two column | Optimized grid layouts |
 | **Desktop** | > 1024px | Multi-column | Full feature set |
 
-## 🔧 **Customization & Extension**
+## **Customization & Extension**
 
-### ➕ **Adding New Ecosystem Products**
+### **Adding New Ecosystem Products**
 
 ```bash
 # 1. Create new icon component
@@ -223,7 +222,7 @@ src/components/EcosystemOverview.jsx
 src/components/Navigation.jsx
 ```
 
-### 📊 **Modifying Data Visualizations**
+### **Modifying Data Visualizations**
 
 ```javascript
 // Edit chart data and configurations
@@ -236,7 +235,7 @@ src/components/DataInsights.jsx
 // - Radar charts for multi-metric analysis
 ```
 
-### 🎨 **Styling & Theme Customization**
+### **Styling & Theme Customization**
 
 ```bash
 # Tailwind configuration
@@ -249,9 +248,9 @@ src/index.css
 src/components/[ComponentName].jsx
 ```
 
-## 🌐 **Production Deployment**
+## **Production Deployment**
 
-### 🚀 **Recommended Deployment Platforms**
+### **Recommended Deployment Platforms**
 
 | Platform | Setup Time | Cost | Features | Status |
 |----------|------------|------|----------|--------|
@@ -260,7 +259,7 @@ src/components/[ComponentName].jsx
 | **AWS S3 + CloudFront** | 15 minutes | Pay-per-use | Enterprise-grade | ✅ Supported |
 | **GitHub Pages** | 10 minutes | Free | Automated CI/CD | ✅ Supported |
 
-### 📋 **Deployment Checklist**
+### **Deployment Checklist**
 
 - [ ] Run `npm run build` successfully
 - [ ] Test production build locally with `npm run preview`
@@ -270,17 +269,17 @@ src/components/[ComponentName].jsx
 - [ ] Check performance with Lighthouse
 - [ ] Configure custom domain (if applicable)
 
-## 📄 **License & Legal**
+## **License & Legal**
 
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
 
 This project is **proprietary to Triton Mining Co.** All rights reserved.
 
-## 🤝 **Contributing Guidelines**
+## **Contributing Guidelines**
 
 [![Contributing](https://img.shields.io/badge/Contributing-Guidelines-blue?style=for-the-badge)](CONTRIBUTING.md)
 
-### 📝 **Development Standards**
+### **Development Standards**
 
 - Follow established component patterns
 - Ensure all components are properly documented
@@ -288,7 +287,7 @@ This project is **proprietary to Triton Mining Co.** All rights reserved.
 - Test on multiple devices and browsers
 - Follow the established design system
 
-### 🔄 **Pull Request Process**
+### **Pull Request Process**
 
 1. Fork the repository
 2. Create a feature branch
@@ -296,7 +295,7 @@ This project is **proprietary to Triton Mining Co.** All rights reserved.
 4. Test thoroughly
 5. Submit a pull request with detailed description
 
-## 📞 **Support & Contact**
+## **Support & Contact**
 
 | Contact Type | Information | Response Time |
 |--------------|-------------|---------------|
@@ -309,7 +308,7 @@ This project is **proprietary to Triton Mining Co.** All rights reserved.
 
 <div align="center">
 
-**🌊 Built with ❤️ for the future of sustainable ocean mining**
+**Built with passion for the future of sustainable ocean mining**
 
 [![Triton Mining Co.](https://img.shields.io/badge/Triton_Mining_Co.-2024-00b4d8?style=for-the-badge&logo=react&logoColor=white)](https://tritonmining.com)
 

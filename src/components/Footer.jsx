@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUp, Github, Twitter, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import TritonLogo from './TritonLogo';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -55,10 +56,8 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="mb-6"
               >
-                <div className="flex items-center space-x-2 mb-4">
-                  <div className="w-8 h-8 rounded-full border-2 border-ocean-primary flex items-center justify-center">
-                    <div className="w-4 h-4 bg-ocean-primary rounded-full"></div>
-                  </div>
+                <div className="flex items-center space-x-3 mb-4">
+                  <TritonLogo size={32} className="flex-shrink-0" />
                   <span className="text-xl font-orbitron font-bold gradient-text">
                     Triton Mining Co.
                   </span>

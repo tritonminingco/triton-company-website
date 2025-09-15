@@ -10,6 +10,7 @@ import ArticlesSection from './components/ArticlesSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import ScrollProgress from './components/ScrollProgress';
+import DeepSeaGuardCTA from './components/DeepSeaGuardCTA';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -52,6 +53,9 @@ function App() {
       </main>
       
       <Footer />
+      
+      {/* DeepSeaGuard CTA Popup */}
+      <DeepSeaGuardCTA />
     </div>
   );
 }

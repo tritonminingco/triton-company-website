@@ -9,7 +9,7 @@
 
 > **A cutting-edge, minimalistic website showcasing the complete Triton ecosystem for sustainable ocean mining.** Built with modern web technologies and featuring Cursor.ai-inspired design principles with custom SVG icons and real-time data visualizations.
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-View_Website-00b4d8?style=for-the-badge&logo=vercel&logoColor=white)](https://tritonmining.com)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-View_Website-00b4d8?style=for-the-badge&logo=vercel&logoColor=white)](https://tritonmining.io)
 [![Documentation](https://img.shields.io/badge/Documentation-Read_More-007ea7?style=for-the-badge&logo=gitbook&logoColor=white)](#documentation)
 [![Contributing](https://img.shields.io/badge/Contributing-Guidelines-0096c7?style=for-the-badge&logo=github&logoColor=white)](#contributing)
 
@@ -299,10 +299,10 @@ This project is **proprietary to Triton Mining Co.** All rights reserved.
 
 | Contact Type | Information | Response Time |
 |--------------|-------------|---------------|
-| **Technical Support** | dev@tritonmining.com | 24 hours |
-| **General Inquiries** | info@tritonmining.com | 48 hours |
-| **Press & Media** | press@tritonmining.com | 24 hours |
-| **Partnerships** | partnerships@tritonmining.com | 72 hours |
+| **Technical Support** | dev@tritonmining.io | 24 hours |
+| **General Inquiries** | info@tritonmining.io | 48 hours |
+| **Press & Media** | press@tritonmining.io | 24 hours |
+| **Partnerships** | partnerships@tritonmining.io | 72 hours |
 
 ---
 
@@ -310,6 +310,6 @@ This project is **proprietary to Triton Mining Co.** All rights reserved.
 
 **Built with passion for the future of sustainable ocean mining**
 
-[![Triton Mining Co.](https://img.shields.io/badge/Triton_Mining_Co.-2024-00b4d8?style=for-the-badge&logo=react&logoColor=white)](https://tritonmining.com)
+[![Triton Mining Co.](https://img.shields.io/badge/Triton_Mining_Co.-2024-00b4d8?style=for-the-badge&logo=react&logoColor=white)](https://tritonmining.io)
 
 </div>

@@ -72,9 +72,9 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-orbitron font-bold mb-6 leading-tight"
           >
-            <span className="gradient-text whitespace-nowrap">Redefining Ocean Mining</span>
+            <span className="gradient-text whitespace-nowrap">Redefining Deep-Sea Mining</span>
             <br />
-            <span className="text-ocean-text">with AI, Autonomy, and Ethics</span>
+            <span className="text-ocean-text text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">Sustainable, autonomous, and transparent by design.</span>
           </motion.h1>
 
           {/* Subtext */}
@@ -84,8 +84,6 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg sm:text-xl lg:text-2xl text-ocean-text/80 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            Pioneering sustainable deep-sea mining through advanced autonomous systems, 
-            real-time environmental monitoring, and transparent compliance management.
           </motion.p>
 
           {/* Key Features */}

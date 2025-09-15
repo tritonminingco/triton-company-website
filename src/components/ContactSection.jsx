@@ -44,8 +44,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email',
-        details: ['contact@tritonmining.io', 'press@tritonmining.com'],
-      action: 'mailto:press@tritonmining.com'
+        details: ['contact@tritonmining.io', 'contact@tritonmining.io'],
+      action: 'mailto:rachel@tritonmining.io'
     },
     {
       icon: Phone,

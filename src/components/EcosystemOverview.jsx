@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
@@ -16,13 +16,18 @@ import {
   AITechnologyIcon,
   SustainabilityIcon
 } from './icons/TritonIcons';
+import ProductModal from './ProductModal';
+import { productData } from '../data/productData';
 
 const EcosystemOverview = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const ecosystemProducts = [
     {
+      key: 'deepseaguard',
       icon: DeepSeaGuardIcon,
       title: 'DeepSeaGuard',
       description: 'Real-time compliance dashboard for ISA regulations and environmental monitoring',
@@ -30,6 +35,7 @@ const EcosystemOverview = () => {
       color: 'from-blue-500 to-cyan-500'
     },
     {
+      key: 'sealink',
       icon: SeaLinkIcon,
       title: 'SeaLink',
       description: 'Autonomous buoy mesh network for communication and data transmission',
@@ -37,6 +43,7 @@ const EcosystemOverview = () => {
       color: 'from-cyan-500 to-teal-500'
     },
     {
+      key: 'shellby',
       icon: ShellbyIcon,
       title: 'Shellby',
       description: 'Coastal sentinel system for environmental protection and monitoring',
@@ -44,6 +51,7 @@ const EcosystemOverview = () => {
       color: 'from-teal-500 to-green-500'
     },
     {
+      key: 'lunaAUV',
       icon: LunaAUVIcon,
       title: 'Luna AUV',
       description: 'Deep-sea autonomous underwater vehicles for exploration and data collection',
@@ -51,6 +59,7 @@ const EcosystemOverview = () => {
       color: 'from-green-500 to-emerald-500'
     },
     {
+      key: 'crabbots',
       icon: CrabBotsIcon,
       title: 'CrabBots',
       description: 'Autonomous nodule collectors with precision harvesting capabilities',
@@ -58,6 +67,7 @@ const EcosystemOverview = () => {
       color: 'from-emerald-500 to-lime-500'
     },
     {
+      key: 'processingStations',
       icon: ProcessingStationsIcon,
       title: 'Processing Stations',
       description: 'Inland refineries for sustainable mineral processing and refinement',
@@ -65,6 +75,7 @@ const EcosystemOverview = () => {
       color: 'from-lime-500 to-yellow-500'
     },
     {
+      key: 'dataInfrastructure',
       icon: DataInfrastructureIcon,
       title: 'Data Infrastructure',
       description: 'Secure databases, APIs, and cloud systems for data management',
@@ -72,6 +83,7 @@ const EcosystemOverview = () => {
       color: 'from-yellow-500 to-orange-500'
     },
     {
+      key: 'externalSystems',
       icon: ExternalSystemsIcon,
       title: 'External Systems',
       description: 'Integration with regulators, NGOs, and partner organizations',
@@ -79,6 +91,7 @@ const EcosystemOverview = () => {
       color: 'from-orange-500 to-red-500'
     },
     {
+      key: 'tritonServices',
       icon: TritonServicesIcon,
       title: 'Triton Services',
       description: 'Consulting services and open-source tools for the industry',
@@ -86,6 +99,19 @@ const EcosystemOverview = () => {
       color: 'from-red-500 to-pink-500'
     }
   ];
+
+  const handleProductClick = (productKey) => {
+    const product = productData[productKey];
+    if (product) {
+      setSelectedProduct({ ...product, icon: ecosystemProducts.find(p => p.key === productKey)?.icon });
+      setIsModalOpen(true);
+    }
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProduct(null);
+  };
 
   const coreTechnologies = [
     {
@@ -212,7 +238,9 @@ const EcosystemOverview = () => {
                 key={product.title}
                 variants={itemVariants}
                 whileHover={{ scale: 1.02, y: -5 }}
-                className="group bg-ocean-dark/30 backdrop-blur-sm border border-ocean-primary/20 rounded-xl p-6 card-hover relative overflow-hidden"
+                whileTap={{ scale: 0.98 }}
+                onClick={() => handleProductClick(product.key)}
+                className="group bg-ocean-dark/30 backdrop-blur-sm border border-ocean-primary/20 rounded-xl p-6 card-hover relative overflow-hidden cursor-pointer"
               >
                 {/* Gradient Background */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${product.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
@@ -321,6 +349,13 @@ const EcosystemOverview = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* Product Modal */}
+      <ProductModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        product={selectedProduct}
+      />
     </section>
   );
 };

@@ -5,33 +5,22 @@ import { DeepSeaGuardIcon } from './icons/TritonIcons';
 
 const DeepSeaGuardCTA = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [hasSeenCTA, setHasSeenCTA] = useState(false);
 
   useEffect(() => {
-    // Check if user has seen the CTA before
-    const seenCTA = localStorage.getItem('deepseaguard-cta-seen');
-    if (!seenCTA) {
-      // Show CTA after a short delay for better UX
-      const timer = setTimeout(() => {
-        setIsOpen(true);
-      }, 2000);
-      return () => clearTimeout(timer);
-    } else {
-      setHasSeenCTA(true);
-    }
+    // Show CTA after a short delay for better UX on every load
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+    }, 2000);
+    return () => clearTimeout(timer);
   }, []);
 
   const handleClose = () => {
     setIsOpen(false);
-    // Remember that user has seen the CTA
-    localStorage.setItem('deepseaguard-cta-seen', 'true');
   };
 
   const handleDontShowAgain = () => {
     setIsOpen(false);
-    // Set a longer expiration for "don't show again"
-    localStorage.setItem('deepseaguard-cta-seen', 'true');
-    localStorage.setItem('deepseaguard-cta-dismissed', 'true');
+    // Note: This will still show on next page load as requested
   };
 
   const handleGetStarted = () => {
@@ -73,10 +62,6 @@ const DeepSeaGuardCTA = () => {
     exit: { opacity: 0 }
   };
 
-  // Don't render if user has dismissed it permanently
-  if (hasSeenCTA && localStorage.getItem('deepseaguard-cta-dismissed')) {
-    return null;
-  }
 
   return (
     <AnimatePresence>
@@ -293,7 +278,7 @@ const DeepSeaGuardCTA = () => {
                     onClick={handleDontShowAgain}
                     className="text-ocean-text/50 hover:text-ocean-text/70 transition-colors duration-300 text-sm"
                   >
-                    Don't show again
+                    Close
                   </motion.button>
                   <motion.button
                     whileHover={{ scale: 1.05 }}

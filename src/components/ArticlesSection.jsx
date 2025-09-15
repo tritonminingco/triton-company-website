@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Calendar, Clock, ArrowRight, ExternalLink } from 'lucide-react';
+import ArticleModal from './ArticleModal';
 
 const ArticlesSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const [selectedArticle, setSelectedArticle] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const articles = [
     {
@@ -103,6 +106,16 @@ const ArticlesSection = () => {
     });
   };
 
+  const handleArticleClick = (article) => {
+    setSelectedArticle(article);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedArticle(null);
+  };
+
   const getCategoryColor = (category) => {
     const colors = {
       'Technology': 'bg-blue-500/20 text-blue-400 border-blue-500/30',
@@ -169,7 +182,9 @@ const ArticlesSection = () => {
             <motion.article
               key={article.id}
               whileHover={{ scale: 1.02 }}
-              className="bg-ocean-dark/50 backdrop-blur-sm border border-ocean-primary/20 rounded-2xl overflow-hidden"
+              whileTap={{ scale: 0.98 }}
+              onClick={() => handleArticleClick(article)}
+              className="bg-ocean-dark/50 backdrop-blur-sm border border-ocean-primary/20 rounded-2xl overflow-hidden cursor-pointer"
             >
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                 <div className="relative h-64 lg:h-auto">
@@ -233,7 +248,9 @@ const ArticlesSection = () => {
               key={article.id}
               variants={itemVariants}
               whileHover={{ scale: 1.02, y: -5 }}
-              className="bg-ocean-dark/50 backdrop-blur-sm border border-ocean-primary/20 rounded-xl overflow-hidden card-hover group"
+              whileTap={{ scale: 0.98 }}
+              onClick={() => handleArticleClick(article)}
+              className="bg-ocean-dark/50 backdrop-blur-sm border border-ocean-primary/20 rounded-xl overflow-hidden card-hover group cursor-pointer"
             >
               <div className="relative h-48">
                 <div className="absolute inset-0 bg-gradient-to-br from-ocean-primary/20 to-ocean-accent/20"></div>
@@ -314,6 +331,13 @@ const ArticlesSection = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* Article Modal */}
+      <ArticleModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        article={selectedArticle}
+      />
     </section>
   );
 };

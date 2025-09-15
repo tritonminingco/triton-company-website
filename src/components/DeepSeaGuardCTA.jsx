@@ -10,7 +10,7 @@ const DeepSeaGuardCTA = () => {
     // Show CTA after a short delay for better UX on every load
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 2000);
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -61,7 +61,6 @@ const DeepSeaGuardCTA = () => {
     visible: { opacity: 1 },
     exit: { opacity: 0 }
   };
-
 
   return (
     <AnimatePresence>
@@ -132,8 +131,37 @@ const DeepSeaGuardCTA = () => {
               </div>
             </div>
 
+            {/* Early Tester Banner */}
+            <div className="px-8 pt-6 pb-4">
+              <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-xl p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-6 h-6 bg-purple-400 rounded-full animate-pulse"></div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-orbitron font-bold text-ocean-text mb-2">
+                      DeepSeaGuard is now live!
+                    </h3>
+                    <p className="text-ocean-text/80 leading-relaxed mb-4">
+                      We're inviting contractors, regulators, and research partners to explore the platform as early testers. 
+                      During this limited rollout, access is provided on a complimentary basis while we gather feedback to 
+                      shape the future of ISA reporting and compliance tools.
+                    </p>
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center space-x-2 hover:shadow-lg hover:shadow-purple-500/25"
+                    >
+                      <span>Join as an Early Tester</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </motion.button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Content */}
-            <div className="p-8">
+            <div className="px-8 pb-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Left Column - Key Benefits */}
                 <div className="space-y-6">

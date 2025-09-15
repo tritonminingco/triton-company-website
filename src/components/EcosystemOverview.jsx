@@ -146,18 +146,18 @@ const EcosystemOverview = () => {
       title: 'Environmental Monitoring',
       description: 'Advanced sensors and real-time data collection for ecosystem protection',
       category: 'Monitoring',
-      color: 'from-green-500 to-emerald-500',
-      bgGradient: 'from-green-500/10 to-emerald-500/5',
-      borderColor: 'border-green-500/20'
+      color: 'from-purple-500 to-pink-500',
+      bgGradient: 'from-purple-500/10 to-pink-500/5',
+      borderColor: 'border-purple-500/20'
     },
     {
       icon: SustainabilityIcon,
       title: 'Sustainability',
       description: 'Carbon-neutral operations and circular economy principles',
       category: 'Sustainability',
-      color: 'from-emerald-500 to-teal-500',
-      bgGradient: 'from-emerald-500/10 to-teal-500/5',
-      borderColor: 'border-emerald-500/20'
+      color: 'from-purple-500 to-pink-500',
+      bgGradient: 'from-purple-500/10 to-pink-500/5',
+      borderColor: 'border-purple-500/20'
     }
   ];
 

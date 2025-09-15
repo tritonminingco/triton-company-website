@@ -70,9 +70,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl sm:text-5xl lg:text-7xl font-orbitron font-bold mb-6 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-orbitron font-bold mb-6 leading-tight"
           >
-            <span className="gradient-text">Redefining Ocean Mining</span>
+            <span className="gradient-text whitespace-nowrap">Redefining Ocean Mining</span>
             <br />
             <span className="text-ocean-text">with AI, Autonomy, and Ethics</span>
           </motion.h1>

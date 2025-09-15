@@ -30,7 +30,7 @@ function App() {
       <div className="fixed inset-0 bg-ocean-dark flex items-center justify-center z-50">
         <div className="text-center">
           <div className="w-16 h-16 border-4 border-ocean-primary border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <h2 className="text-ocean-text text-xl font-inter">Triton Mining Co.</h2>
+          <h2 className="text-ocean-text text-xl font-orbitron">Triton Mining Co.</h2>
           <p className="text-ocean-primary">Loading...</p>
         </div>
       </div>

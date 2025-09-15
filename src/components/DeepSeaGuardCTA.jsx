@@ -80,7 +80,7 @@ const DeepSeaGuardCTA = () => {
           
           {/* Modal Content */}
           <motion.div
-            className="relative w-full max-w-2xl max-h-[90vh] bg-ocean-dark border border-ocean-primary/30 rounded-2xl overflow-hidden shadow-2xl my-8"
+            className="relative w-full max-w-2xl max-h-[90vh] bg-ocean-dark border border-ocean-primary/30 rounded-2xl shadow-2xl my-8 flex flex-col"
             variants={modalVariants}
             initial="hidden"
             animate="visible"
@@ -161,8 +161,9 @@ const DeepSeaGuardCTA = () => {
             </div>
 
             {/* Content */}
-            <div className="px-8 pb-8 overflow-y-auto max-h-[calc(90vh-200px)]">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="flex-1 overflow-y-auto">
+              <div className="px-8 pb-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Left Column - Key Benefits */}
                 <div className="space-y-6">
                   <div>
@@ -291,6 +292,7 @@ const DeepSeaGuardCTA = () => {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
 
             {/* Footer */}

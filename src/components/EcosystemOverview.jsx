@@ -32,7 +32,9 @@ const EcosystemOverview = () => {
       title: 'DeepSeaGuard',
       description: 'Real-time compliance dashboard for ISA regulations and environmental monitoring',
       category: 'Compliance',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-blue-500 to-cyan-500',
+      bgGradient: 'from-blue-500/10 to-cyan-500/5',
+      borderColor: 'border-blue-500/20'
     },
     {
       key: 'sealink',
@@ -40,7 +42,9 @@ const EcosystemOverview = () => {
       title: 'SeaLink',
       description: 'Autonomous buoy mesh network for communication and data transmission',
       category: 'Communication',
-      color: 'from-cyan-500 to-teal-500'
+      color: 'from-cyan-500 to-teal-500',
+      bgGradient: 'from-cyan-500/10 to-teal-500/5',
+      borderColor: 'border-cyan-500/20'
     },
     {
       key: 'shellby',
@@ -48,7 +52,9 @@ const EcosystemOverview = () => {
       title: 'Shellby',
       description: 'Coastal sentinel system for environmental protection and monitoring',
       category: 'Environmental',
-      color: 'from-teal-500 to-green-500'
+      color: 'from-teal-500 to-green-500',
+      bgGradient: 'from-teal-500/10 to-green-500/5',
+      borderColor: 'border-teal-500/20'
     },
     {
       key: 'lunaAUV',
@@ -56,7 +62,9 @@ const EcosystemOverview = () => {
       title: 'Luna AUV',
       description: 'Deep-sea autonomous underwater vehicles for exploration and data collection',
       category: 'Vehicles',
-      color: 'from-green-500 to-emerald-500'
+      color: 'from-green-500 to-emerald-500',
+      bgGradient: 'from-green-500/10 to-emerald-500/5',
+      borderColor: 'border-green-500/20'
     },
     {
       key: 'crabbots',
@@ -64,7 +72,9 @@ const EcosystemOverview = () => {
       title: 'CrabBots',
       description: 'Autonomous nodule collectors with precision harvesting capabilities',
       category: 'Mining',
-      color: 'from-emerald-500 to-lime-500'
+      color: 'from-emerald-500 to-lime-500',
+      bgGradient: 'from-emerald-500/10 to-lime-500/5',
+      borderColor: 'border-emerald-500/20'
     },
     {
       key: 'processingStations',
@@ -72,7 +82,9 @@ const EcosystemOverview = () => {
       title: 'Processing Stations',
       description: 'Inland refineries for sustainable mineral processing and refinement',
       category: 'Processing',
-      color: 'from-lime-500 to-yellow-500'
+      color: 'from-lime-500 to-yellow-500',
+      bgGradient: 'from-lime-500/10 to-yellow-500/5',
+      borderColor: 'border-lime-500/20'
     },
     {
       key: 'dataInfrastructure',
@@ -80,7 +92,9 @@ const EcosystemOverview = () => {
       title: 'Data Infrastructure',
       description: 'Secure databases, APIs, and cloud systems for data management',
       category: 'Infrastructure',
-      color: 'from-yellow-500 to-orange-500'
+      color: 'from-yellow-500 to-orange-500',
+      bgGradient: 'from-yellow-500/10 to-orange-500/5',
+      borderColor: 'border-yellow-500/20'
     },
     {
       key: 'externalSystems',
@@ -88,7 +102,9 @@ const EcosystemOverview = () => {
       title: 'External Systems',
       description: 'Integration with regulators, NGOs, and partner organizations',
       category: 'Integration',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-orange-500 to-red-500',
+      bgGradient: 'from-orange-500/10 to-red-500/5',
+      borderColor: 'border-orange-500/20'
     },
     {
       key: 'tritonServices',
@@ -96,7 +112,9 @@ const EcosystemOverview = () => {
       title: 'Triton Services',
       description: 'Consulting services and open-source tools for the industry',
       category: 'Services',
-      color: 'from-red-500 to-pink-500'
+      color: 'from-red-500 to-pink-500',
+      bgGradient: 'from-red-500/10 to-pink-500/5',
+      borderColor: 'border-red-500/20'
     }
   ];
 
@@ -118,19 +136,28 @@ const EcosystemOverview = () => {
       icon: AITechnologyIcon,
       title: 'AI Technology',
       description: 'Machine learning algorithms for autonomous decision-making and optimization',
-      category: 'Technology'
+      category: 'Technology',
+      color: 'from-purple-500 to-pink-500',
+      bgGradient: 'from-purple-500/10 to-pink-500/5',
+      borderColor: 'border-purple-500/20'
     },
     {
       icon: EnvironmentalMonitoringIcon,
       title: 'Environmental Monitoring',
       description: 'Advanced sensors and real-time data collection for ecosystem protection',
-      category: 'Monitoring'
+      category: 'Monitoring',
+      color: 'from-green-500 to-emerald-500',
+      bgGradient: 'from-green-500/10 to-emerald-500/5',
+      borderColor: 'border-green-500/20'
     },
     {
       icon: SustainabilityIcon,
       title: 'Sustainability',
       description: 'Carbon-neutral operations and circular economy principles',
-      category: 'Sustainability'
+      category: 'Sustainability',
+      color: 'from-emerald-500 to-teal-500',
+      bgGradient: 'from-emerald-500/10 to-teal-500/5',
+      borderColor: 'border-emerald-500/20'
     }
   ];
 
@@ -199,11 +226,15 @@ const EcosystemOverview = () => {
                 key={tech.title}
                 variants={itemVariants}
                 whileHover={{ scale: 1.05, y: -10 }}
-                className="bg-ocean-dark/50 backdrop-blur-sm border border-ocean-primary/20 rounded-xl p-8 text-center card-hover"
+                className={`bg-gradient-to-br ${tech.bgGradient} backdrop-blur-sm border ${tech.borderColor} rounded-xl p-8 text-center card-hover relative overflow-hidden`}
               >
-                <div className="flex justify-center mb-6">
-                  <tech.icon className="text-ocean-primary" />
-                </div>
+                {/* Hover Gradient Background */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
+                
+                <div className="relative z-10">
+                  <div className="flex justify-center mb-6">
+                    <tech.icon className="text-ocean-primary" />
+                  </div>
                 <h4 className="text-xl font-orbitron font-semibold mb-4 text-ocean-text">
                   {tech.title}
                 </h4>
@@ -214,6 +245,7 @@ const EcosystemOverview = () => {
                   <span className="inline-block px-3 py-1 bg-ocean-primary/20 text-ocean-primary rounded-full text-sm font-medium">
                     {tech.category}
                   </span>
+                </div>
                 </div>
               </motion.div>
             ))}
@@ -240,14 +272,16 @@ const EcosystemOverview = () => {
                 whileHover={{ scale: 1.02, y: -5 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => handleProductClick(product.key)}
-                className="group bg-ocean-dark/30 backdrop-blur-sm border border-ocean-primary/20 rounded-xl p-6 card-hover relative overflow-hidden cursor-pointer"
+                className={`group bg-gradient-to-br ${product.bgGradient} backdrop-blur-sm border ${product.borderColor} rounded-xl p-6 card-hover relative overflow-hidden cursor-pointer`}
               >
-                {/* Gradient Background */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${product.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
+                {/* Hover Gradient Background */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${product.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
                 
                 <div className="relative z-10">
                   <div className="flex items-center space-x-4 mb-4">
-                    <product.icon className="text-ocean-primary group-hover:scale-110 transition-transform duration-300" />
+                    <div className="group-hover:scale-110 transition-transform duration-300">
+                      <product.icon className="text-ocean-primary" />
+                    </div>
                     <div>
                       <h4 className="text-lg font-orbitron font-semibold text-ocean-text group-hover:text-ocean-primary transition-colors duration-300">
                         {product.title}

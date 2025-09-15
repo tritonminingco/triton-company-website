@@ -70,7 +70,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-orbitron font-bold mb-6 leading-tight"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-inter font-bold mb-6 leading-tight"
           >
             <span className="gradient-text whitespace-nowrap">Redefining Ocean Mining</span>
             <br />
@@ -156,7 +156,7 @@ const Hero = () => {
                 transition={{ duration: 0.5, delay: 1.2 + index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-orbitron font-bold gradient-text mb-2">
+                <div className="text-xl sm:text-2xl lg:text-3xl font-inter font-bold gradient-text mb-2">
                   {stat.number}
                 </div>
                 <div className="text-sm sm:text-base text-ocean-text/70">

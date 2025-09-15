@@ -24,12 +24,23 @@ const DeepSeaGuardCTA = () => {
   };
 
   const handleGetStarted = () => {
-    // Scroll to DeepSeaGuard section or open product modal
-    const deepSeaGuardSection = document.getElementById('ecosystem');
-    if (deepSeaGuardSection) {
-      deepSeaGuardSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    // Close the CTA modal first
     handleClose();
+    
+    // Wait a moment for the modal to close, then trigger DeepSeaGuard product modal
+    setTimeout(() => {
+      // Find the DeepSeaGuard product card and click it to open the product modal
+      const deepSeaGuardCard = document.querySelector('[data-product-key="deepseaguard"]');
+      if (deepSeaGuardCard) {
+        deepSeaGuardCard.click();
+      } else {
+        // Fallback: scroll to ecosystem section
+        const deepSeaGuardSection = document.getElementById('ecosystem');
+        if (deepSeaGuardSection) {
+          deepSeaGuardSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }, 300);
   };
 
   const modalVariants = {

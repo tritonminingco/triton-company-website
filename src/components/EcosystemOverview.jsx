@@ -272,6 +272,7 @@ const EcosystemOverview = () => {
                 whileHover={{ scale: 1.02, y: -5 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => handleProductClick(product.key)}
+                data-product-key={product.key}
                 className={`group bg-gradient-to-br ${product.bgGradient} backdrop-blur-sm border ${product.borderColor} rounded-xl p-6 card-hover relative overflow-hidden cursor-pointer`}
               >
                 {/* Hover Gradient Background */}

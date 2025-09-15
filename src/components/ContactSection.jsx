@@ -44,26 +44,26 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email',
-      details: ['press@tritonmining.com', 'info@tritonmining.com'],
+        details: ['contact@tritonmining.io', 'press@tritonmining.com'],
       action: 'mailto:press@tritonmining.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+1 (555) 123-4567', 'Mon-Fri 9AM-6PM PST'],
+      details: ['+1 (239) 428-3414', 'Mon-Fri 9AM-6PM PST'],
       action: 'tel:+15551234567'
     },
     {
       icon: MapPin,
       title: 'Office',
-      details: ['San Francisco, CA', 'United States'],
+      details: ['7901 4th St N STE 300, St. Pete Beach, Florida 33702', 'United States'],
       action: 'https://maps.google.com'
     },
     {
       icon: Github,
       title: 'GitHub',
       details: ['github.com/tritonmining', 'Open Source Projects'],
-      action: 'https://github.com/tritonmining'
+      action: 'https://github.com/tritonminingco'
     }
   ];
 
@@ -72,21 +72,21 @@ const ContactSection = () => {
       title: 'Schedule a Demo',
       description: 'See our technology in action',
       icon: Calendar,
-      action: 'https://calendly.com/tritonmining',
+      action: 'https://calendly.com/tritonminingc',
       color: 'from-blue-500 to-cyan-500'
     },
     {
       title: 'Press Inquiries',
       description: 'Media and press contacts',
       icon: Mail,
-      action: 'mailto:press@tritonmining.com',
+      action: 'mailto:contacts@tritonmining.io',
       color: 'from-purple-500 to-pink-500'
     },
     {
       title: 'Partnership',
       description: 'Collaborate with us',
       icon: Send,
-      action: 'mailto:partnerships@tritonmining.com',
+      action: 'mailto:contact@tritonmining.io',
       color: 'from-green-500 to-emerald-500'
     }
   ];

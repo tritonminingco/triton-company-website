@@ -6,6 +6,7 @@ import EcosystemOverview from './components/EcosystemOverview';
 import InteractiveMap from './components/InteractiveMap';
 import DataInsights from './components/DataInsights';
 import ComplianceSection from './components/ComplianceSection';
+import TeamSection from './components/TeamSection';
 import ArticlesSection from './components/ArticlesSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -48,6 +49,7 @@ function App() {
         <InteractiveMap />
         <DataInsights />
         <ComplianceSection />
+        <TeamSection />
         <ArticlesSection />
         <ContactSection />
       </main>

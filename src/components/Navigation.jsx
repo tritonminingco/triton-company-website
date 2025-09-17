@@ -13,6 +13,7 @@ const Navigation = () => {
     { name: 'Technology', href: '#technology' },
     { name: 'Compliance', href: '#compliance' },
     { name: 'Data', href: '#data' },
+    { name: 'Team', href: '#team' },
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
   ];

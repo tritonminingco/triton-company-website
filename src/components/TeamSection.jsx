@@ -18,9 +18,9 @@ const TeamSection = () => {
   // Group members by role category
   const roleCategories = {
     'Leadership': ['Founder & CEO', 'Chief Communications Officer (CCO)', 'Chief Technology Officer (CTO)'],
-    'Engineering': ['Software Engineer', 'Full-Stack Developer', 'Backend/AI/ML Engineer', 'Electronics Engineer & AI Specialist', 'Senior Developer & Architect'],
+    'Engineering': ['Software Engineer', 'Full-Stack Developer', 'Backend Engineer', 'Electronics Engineer & ML Specialist', 'Senior Developer & Architect'],
     'Robotics': ['Mechatronic Engineer & ROS2 Developer', 'Robotics & Software Engineer', 'Robotics & RL Engineer', 'Marine Robotics Engineer', 'Fleet Management & RL Engineer', 'Senior Robotics Engineer'],
-    'AI/ML': ['Deep Learning Engineer', 'Backend & ML Engineer', 'AI Developer & Tech Lead', 'AI Full-Stack Developer'],
+    'Machine Learning': ['Deep Learning Engineer', 'Backend & ML Engineer', 'ML Developer & Tech Lead', 'ML Full-Stack Developer'],
     'Specialized': ['Technical Artist', 'Electrical Engineer', 'Embedded Software Engineer', 'Electronics Engineer & XR Developer']
   };
 
@@ -148,7 +148,7 @@ const TeamSection = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-wrap justify-center gap-3 mb-12"
         >
-          {['all', 'robotics', 'ai', 'engineering', 'marine'].map((filterType) => (
+          {['all', 'robotics', 'ml', 'engineering', 'marine'].map((filterType) => (
             <button
               key={filterType}
               onClick={() => setFilter(filterType)}

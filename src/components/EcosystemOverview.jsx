@@ -13,7 +13,7 @@ import {
   ExternalSystemsIcon,
   TritonServicesIcon,
   EnvironmentalMonitoringIcon,
-  AITechnologyIcon,
+  MLTechnologyIcon,
   SustainabilityIcon
 } from './icons/TritonIcons';
 import ProductModal from './ProductModal';
@@ -133,8 +133,8 @@ const EcosystemOverview = () => {
 
   const coreTechnologies = [
     {
-      icon: AITechnologyIcon,
-      title: 'AI Technology',
+      icon: MLTechnologyIcon,
+      title: 'ML Technology',
       description: 'Machine learning algorithms for autonomous decision-making and optimization',
       category: 'Technology',
       color: 'from-purple-500 to-pink-500',
@@ -355,7 +355,7 @@ const EcosystemOverview = () => {
                 <div className="w-16 h-16 bg-ocean-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <DataInfrastructureIcon className="text-ocean-primary" />
                 </div>
-                <h4 className="text-lg font-orbitron font-semibold mb-2 text-ocean-text">AI Processing</h4>
+                <h4 className="text-lg font-orbitron font-semibold mb-2 text-ocean-text">ML Processing</h4>
                 <p className="text-sm text-ocean-text/70">Advanced algorithms analyze data and optimize operations</p>
               </motion.div>
 

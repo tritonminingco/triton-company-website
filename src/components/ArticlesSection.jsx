@@ -14,7 +14,7 @@ const ArticlesSection = () => {
   const articles = [
     {
       id: 1,
-      title: 'Revolutionizing Deep-Sea Mining with AI-Powered Autonomous Systems',
+      title: 'Revolutionizing Deep-Sea Mining with ML-Powered Autonomous Systems',
       excerpt: 'How Triton\'s Luna AUV fleet is transforming ocean mining through advanced machine learning algorithms and real-time environmental monitoring.',
       category: 'Technology',
       readTime: '8 min read',

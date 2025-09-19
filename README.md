@@ -1,13 +1,13 @@
 # Triton Mining Co. Website
 
-[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-7.1.5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-7.1.2-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.0-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![TypeScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge)](https://tritonmining.com)
 
-> **A cutting-edge, minimalistic website showcasing the complete Triton ecosystem for sustainable ocean mining.** Built with modern web technologies and featuring Cursor.ai-inspired design principles with custom SVG icons and real-time data visualizations.
+> **Triton Mining Co.'s official company website featuring our vision for sustainable ocean mining, technology ecosystem, and team.** Built with React and featuring smooth animations, interactive data visualizations, and comprehensive company information.
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-View_Website-00b4d8?style=for-the-badge&logo=vercel&logoColor=white)](https://tritonmining.io)
 [![Documentation](https://img.shields.io/badge/Documentation-Read_More-007ea7?style=for-the-badge&logo=gitbook&logoColor=white)](#documentation)
@@ -15,17 +15,23 @@
 
 ## Overview
 
-This enterprise-grade website presents **Triton Mining Co.'s** comprehensive ecosystem of cutting-edge technologies for sustainable deep-sea mining operations. Our platform demonstrates the future of responsible ocean resource extraction through:
+This is **Triton Mining Co.'s official company website** - a comprehensive digital presence that introduces our company, showcases our innovative technology ecosystem, and highlights our team's expertise in sustainable deep-sea mining operations. The website serves as our primary online platform for:
 
-### **Core Ecosystem Products**
+- **Company Introduction** - Who we are and our mission in sustainable ocean mining
+- **Technology Ecosystem** - Our comprehensive suite of innovative products and solutions
+- **Team Showcase** - Meet our diverse team of engineers, scientists, and industry experts
+- **Company News** - Latest updates, articles, and insights from Triton Mining Co.
+- **Contact & Partnerships** - How to reach us and explore collaboration opportunities
+
+### **Our Technology Ecosystem**
 
 | Product | Description | Technology Focus |
 |---------|-------------|------------------|
-| **DeepSeaGuard** | Real-time compliance monitoring & alert system | AI-powered regulatory adherence |
+| **DeepSeaGuard** | Real-time compliance monitoring & alert system | Automated regulatory adherence |
 | **SeaLink** | Autonomous buoy mesh network for communication | IoT & wireless connectivity |
 | **Shellby** | Coastal sentinel system for environmental protection | Environmental monitoring |
 | **Luna AUV** | Deep-sea autonomous underwater vehicles | Robotics & autonomy |
-| **CrabBots** | Precision nodule collectors with AI harvesting | Precision robotics |
+| **CrabBots** | Precision nodule collectors with automated harvesting | Precision robotics |
 | **Processing Stations** | Inland refineries for sustainable mineral processing | Industrial automation |
 | **Data Infrastructure** | Secure databases, APIs, and cloud systems | Data management |
 | **External Systems** | Integration with regulators, NGOs, and partners | System integration |
@@ -39,26 +45,29 @@ This enterprise-grade website presents **Triton Mining Co.'s** comprehensive eco
 - **Fully responsive design** optimized for desktop, tablet, and mobile
 - **Scroll progress indicator** and seamless smooth scrolling
 - **Professional typography** using Inter + Orbitron font pairing
+- **Ocean-themed color palette** with modern gradients and effects
 
-### **Interactive Capabilities**
-- **Live operations map** with Leaflet.js showing real-time AUV positions
-- **Real-time data visualizations** using Chart.js with 6 interactive charts
-- **Compliance dashboard** with live alerts and monitoring systems
-- **Interactive ecosystem overview** with sophisticated hover effects
-- **Advanced contact form** with real-time validation and submission handling
-- **Global search functionality** with intelligent suggestions
+### **Company Website Features**
+- **Hero section** with company introduction and mission statement
+- **Interactive ecosystem overview** showcasing our technology products with detailed modals
+- **Comprehensive team section** with member profiles, expertise filtering, and detailed bios
+- **Company data visualizations** using Chart.js with 6 interactive charts showing our capabilities
+- **Operations map** with Leaflet.js displaying AUV operations and environmental data
+- **Compliance dashboard** showcasing our DeepSeaGuard monitoring capabilities
+- **Company news & articles** with modal-based content display
+- **Contact & partnership information** with form validation and submission handling
 
 ### **Technology Stack**
 
 | Technology | Version | Purpose | Status |
 |------------|---------|---------|--------|
-| **React** | 18.2.0 | Frontend framework | ✅ Production |
-| **Vite** | 7.1.5 | Build tool & dev server | ✅ Production |
+| **React** | 19.1.1 | Frontend framework | ✅ Production |
+| **Vite** | 7.1.2 | Build tool & dev server | ✅ Production |
 | **TailwindCSS** | 3.4.0 | Utility-first CSS framework | ✅ Production |
-| **Framer Motion** | Latest | Animation library | ✅ Production |
-| **Chart.js** | Latest | Data visualization | ✅ Production |
-| **Leaflet** | Latest | Interactive maps | ✅ Production |
-| **Lucide React** | Latest | Icon system | ✅ Production |
+| **Framer Motion** | 12.23.12 | Animation library | ✅ Production |
+| **Chart.js** | 4.5.0 | Data visualization | ✅ Production |
+| **Leaflet** | 1.9.4 | Interactive maps | ✅ Production |
+| **Lucide React** | 0.544.0 | Icon system | ✅ Production |
 
 ## **Development & Deployment**
 
@@ -173,31 +182,43 @@ All ecosystem products feature custom SVG icons with:
 - **Consistent 32x32px** base size
 - **Ocean primary color scheme** (#00b4d8)
 - **Circular border frame** for visual consistency
-- **Minimalistic design** following Cursor.ai principles
+- **Minimalistic design** following modern web standards
 - **Scalable vector format** for crisp rendering
 
-## **Data Visualizations & Analytics**
+## **Website Sections & Content**
 
-The website features **6 sophisticated interactive charts** powered by Chart.js:
+### **Company Website Structure**
+- **Hero Section** - Welcome message, company mission, and primary call-to-action
+- **Ecosystem Overview** - Interactive showcase of our technology products and solutions
+- **Operations Map** - Visual representation of our AUV operations and environmental monitoring
+- **Data Insights** - Interactive charts demonstrating our capabilities and environmental impact
+- **Compliance Dashboard** - Showcase of our DeepSeaGuard monitoring and regulatory compliance
+- **Team Section** - Meet our team with detailed profiles, expertise areas, and backgrounds
+- **Company News** - Latest articles, updates, and insights from Triton Mining Co.
+- **Contact Section** - Company contact information, partnership inquiries, and communication
 
-| Chart | Type | Data Source | Purpose |
-|-------|------|-------------|---------|
-| **Supply vs Demand** | Line Chart | Market data | Critical mineral market trends |
-| **Environmental Impact** | Bar Chart | Comparative analysis | vs traditional mining methods |
-| **Compliance Status** | Doughnut Chart | Real-time monitoring | ISA compliance dashboard |
-| **Environmental Monitoring** | Radar Chart | Sensor data | Multi-metric environmental health |
-| **AUV Fleet Status** | Bar Chart | Fleet telemetry | Live fleet performance metrics |
-| **Sediment Plume Tracking** | Line Chart | Environmental sensors | 24-hour dispersion monitoring |
+### **Data Visualizations**
 
-### **Interactive Operations Map**
+The website features **6 interactive charts** powered by Chart.js:
+
+| Chart | Type | Purpose |
+|-------|------|---------|
+| **Supply vs Demand** | Line Chart | Critical mineral market trends |
+| **Environmental Impact** | Bar Chart | Comparison with traditional mining methods |
+| **Compliance Status** | Doughnut Chart | ISA compliance dashboard |
+| **Environmental Monitoring** | Radar Chart | Multi-metric environmental health |
+| **AUV Fleet Status** | Bar Chart | Fleet performance metrics |
+| **Sediment Plume Tracking** | Line Chart | 24-hour dispersion monitoring |
+
+### **Interactive Map**
 
 Features a **Leaflet-powered map** centered on the Clarion-Clipperton Zone (CCZ):
 
-- **Live AUV positions** with real-time status indicators
-- **Sediment plume visualization** with concentration overlays
-- **Real-time telemetry data** in interactive popups
-- **Custom markers** with status-specific color coding
-- **Zoom and pan controls** for detailed exploration
+- **AUV positions** with status indicators
+- **Environmental data** visualization
+- **Interactive popups** with telemetry information
+- **Custom markers** with status-specific styling
+- **Zoom and pan controls** for exploration
 
 ### **Responsive Design System**
 
@@ -209,20 +230,30 @@ Features a **Leaflet-powered map** centered on the Clarion-Clipperton Zone (CCZ)
 
 ## **Customization & Extension**
 
-### **Adding New Ecosystem Products**
+### **Adding New Team Members**
 
-```bash
-# 1. Create new icon component
-src/components/icons/TritonIcons.jsx
+```javascript
+// Add new team member to the company team
+src/data/teamData.js
 
-# 2. Add to ecosystem products array
-src/components/EcosystemOverview.jsx
-
-# 3. Update navigation if needed
-src/components/Navigation.jsx
+// Team members are automatically categorized by role
+// Update roleCategories in TeamSection.jsx if needed
 ```
 
-### **Modifying Data Visualizations**
+### **Updating Company Information**
+
+```javascript
+// Edit company product information and descriptions
+src/data/productData.js
+
+// Update ecosystem overview display
+src/components/EcosystemOverview.jsx
+
+// Modify company news and articles
+src/components/ArticlesSection.jsx
+```
+
+### **Customizing Data Visualizations**
 
 ```javascript
 // Edit chart data and configurations
@@ -269,31 +300,41 @@ src/components/[ComponentName].jsx
 - [ ] Check performance with Lighthouse
 - [ ] Configure custom domain (if applicable)
 
+## **About This Website**
+
+This is **Triton Mining Co.'s official company website** - our primary digital presence and corporate identity platform. The website serves multiple purposes:
+
+- **Corporate Identity** - Establishes Triton Mining Co. as a leader in sustainable ocean mining
+- **Technology Showcase** - Demonstrates our comprehensive ecosystem of innovative products
+- **Team Introduction** - Presents our diverse team of experts and their expertise
+- **Company Information** - Provides essential business details, contact information, and news
+- **Partnership Platform** - Facilitates connections with potential partners and stakeholders
+- **Industry Education** - Shares insights about sustainable ocean mining practices
+
+The website is built as a **modern single-page application (SPA)** with smooth scrolling navigation and interactive elements that engage visitors while presenting our company professionally.
+
 ## **License & Legal**
 
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
 
 This project is **proprietary to Triton Mining Co.** All rights reserved.
 
-## **Contributing Guidelines**
+## **Development Guidelines**
 
-[![Contributing](https://img.shields.io/badge/Contributing-Guidelines-blue?style=for-the-badge)](CONTRIBUTING.md)
-
-### **Development Standards**
+### **Code Standards**
 
 - Follow established component patterns
-- Ensure all components are properly documented
-- Write clean, maintainable code
+- Write clean, maintainable React code
+- Use consistent naming conventions
 - Test on multiple devices and browsers
 - Follow the established design system
 
-### **Pull Request Process**
+### **File Organization**
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request with detailed description
+- Components in `src/components/`
+- Data in `src/data/`
+- Icons in `src/components/icons/`
+- Global styles in `src/index.css`
 
 ## **Support & Contact**
 

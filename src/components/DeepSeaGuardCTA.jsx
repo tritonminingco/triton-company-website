@@ -204,7 +204,7 @@ const DeepSeaGuardCTA = () => {
                       <li className="flex items-start space-x-3">
                         <CheckCircle className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
                         <span className="text-ocean-text/80">
-                          <strong>Predictive Alerts:</strong> AI-powered risk assessment and early warnings
+                          <strong>Predictive Alerts:</strong> ML-powered risk assessment and early warnings
                         </span>
                       </li>
                     </ul>

@@ -133,7 +133,7 @@ const ArticleModal = ({ isOpen, onClose, article }) => {
                         { title: "Environmental Impact", content: "Revolutionary reduction in environmental footprint through advanced autonomous systems." },
                         { title: "Economic Viability", content: "Significant cost reductions and improved efficiency in mineral extraction processes." },
                         { title: "Regulatory Compliance", content: "Full adherence to international standards with real-time monitoring capabilities." },
-                        { title: "Technology Innovation", content: "Cutting-edge AI and robotics driving the future of sustainable ocean mining." }
+                        { title: "Technology Innovation", content: "Cutting-edge ML and robotics driving the future of sustainable ocean mining." }
                       ].map((insight, index) => (
                         <div key={index} className="bg-ocean-dark/50 rounded-lg p-4 border border-ocean-primary/20">
                           <h4 className="font-orbitron font-semibold text-ocean-text mb-2">

@@ -82,7 +82,7 @@ export const productData = {
     additionalInfo: [
       {
         title: 'Autonomous Operations',
-        content: 'Self-deploying and self-maintaining buoy network with AI-powered optimization. Automatic reconfiguration based on environmental conditions and operational requirements.'
+        content: 'Self-deploying and self-maintaining buoy network with ML-powered optimization. Automatic reconfiguration based on environmental conditions and operational requirements.'
       },
       {
         title: 'Environmental Impact',
@@ -128,7 +128,7 @@ export const productData = {
     additionalInfo: [
       {
         title: 'Marine Life Protection',
-        content: 'Advanced AI algorithms detect and protect marine life including whales, dolphins, and other protected species. Automatic operation suspension when threats are detected.'
+        content: 'Advanced ML algorithms detect and protect marine life including whales, dolphins, and other protected species. Automatic operation suspension when threats are detected.'
       },
       {
         title: 'Environmental Standards',
@@ -173,8 +173,8 @@ export const productData = {
     ],
     additionalInfo: [
       {
-        title: 'AI-Powered Navigation',
-        content: 'Advanced AI algorithms enable autonomous navigation in complex underwater environments with obstacle avoidance and optimal path planning.'
+        title: 'ML-Powered Navigation',
+        content: 'Advanced ML algorithms enable autonomous navigation in complex underwater environments with obstacle avoidance and optimal path planning.'
       },
       {
         title: 'Swarm Intelligence',
@@ -192,7 +192,7 @@ export const productData = {
     title: 'CrabBots',
     category: 'Mining Operations',
     status: 'Production Ready',
-    description: 'Precision nodule collectors with advanced AI-powered harvesting capabilities. CrabBots are designed for efficient, environmentally-friendly collection of polymetallic nodules with minimal seabed disturbance.',
+    description: 'Precision nodule collectors with advanced ML-powered harvesting capabilities. CrabBots are designed for efficient, environmentally-friendly collection of polymetallic nodules with minimal seabed disturbance.',
     features: [
       'AI-powered precision harvesting',
       'Minimal seabed disturbance design',

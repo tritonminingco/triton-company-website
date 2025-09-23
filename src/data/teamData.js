@@ -72,17 +72,17 @@ export const teamMembers = [
     borderColor: 'border-yellow-500/20'
   },
   {
-  id: 'slavi',
-  name: 'Slavi',
-  role: 'Technical Strategy Lead',
-  bio: '17-year-old full-stack developer with 4 years in tech. Architects digital systems that support ocean technology commercialization and scalable business operations.',
-  expertise: ['Technical Strategy', 'Product Architecture', 'Business Technology'],
-  github: 'https://github.com/Slaviiiii',
-  avatar: './slavi.png',
-  color: 'from-cyan-600 to-blue-600',
-  bgGradient: 'from-cyan-600/10 to-blue-600/5',
-  borderColor: 'border-cyan-600/20'
-},
+    id: 'slavi',
+    name: 'Slavi',
+    role: 'Technical Strategy Lead',
+    bio: '17-year-old full-stack developer with 4 years in tech. Architects digital systems that support ocean technology commercialization and scalable business operations.',
+    expertise: ['Technical Strategy', 'Product Architecture', 'Business Technology'],
+    github: 'https://github.com/Slaviiiii',
+    avatar: './slavi.png',
+    color: 'from-cyan-600 to-blue-600',
+    bgGradient: 'from-cyan-600/10 to-blue-600/5',
+    borderColor: 'border-cyan-600/20'
+  },
   {
     id: 'japhet',
     name: 'Japhet Cunanan',
@@ -284,13 +284,26 @@ export const teamMembers = [
     color: 'from-cyan-600 to-blue-600',
     bgGradient: 'from-cyan-600/10 to-blue-600/5',
     borderColor: 'border-cyan-600/20'
+  },
+  {
+    id: 'jafar',
+    name: 'Jafar Sadiq',
+    role: 'Software Developer',
+    bio: 'Software Developer who enjoys building APIs, data-driven systems, and scalable solutions that improve efficiency and create real impact. Always eager to learn and explore new tech stacks, thrives in solving complex problems and continuously growing skills.',
+    expertise: ['Software Engineering', 'Backend Development', 'Machine Learning', 'Process Automation'],
+    github: 'https://github.com/jafark92',
+    linkedin: 'https://linkedin.com/in/jafarsadiq92/',
+    avatar: './jafar.jpg',
+    color: 'from-cyan-600 to-blue-600',
+    bgGradient: 'from-cyan-600/10 to-blue-600/5',
+    borderColor: 'border-cyan-600/20'
   }
 ];
 
 // Team statistics
 export const teamStats = {
   totalMembers: teamMembers.length,
-  countries: ['USA', 'France', 'Tunisia', 'Colombia', 'Czech Republic', 'Vietnam', 'Bulgaria', 'Thailand', 'India', 'Canada', 'Taiwan'],
+  countries: ['USA', 'France', 'Tunisia', 'Colombia', 'Czech Republic', 'Vietnam', 'Bulgaria', 'Thailand', 'India', 'Canada', 'Taiwan', 'Pakistan'],
   expertise: ['Robotics', 'Machine Learning', 'Software Engineering', 'Electronics', 'Communications', '3D Art', 'Marine Technology'],
   experience: '50+ years combined experience'
 };

@@ -1,0 +1,138 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle 
+    cx="50" 
+    cy="50" 
+    r="48" 
+    fill="url(#backgroundGradient)" 
+    stroke="url(#borderGradient)" 
+    stroke-width="2"
+  />
+  
+  <!-- Central Trident -->
+  <g transform="translate(50, 50)">
+    <!-- Main Trident Shaft -->
+    <rect 
+      x="-2" 
+      y="-25" 
+      width="4" 
+      height="50" 
+      fill="url(#tridentGradient)"
+      rx="2"
+    />
+    
+    <!-- Central Spearhead -->
+    <path 
+      d="M-8 -35 L0 -25 L8 -35 L6 -30 L2 -26 L-2 -26 L-6 -30 Z" 
+      fill="url(#spearGradient)"
+    />
+    
+    <!-- Left Prong -->
+    <path 
+      d="M-15 -20 L-8 -15 L-10 -10 L-18 -15 Z" 
+      fill="url(#prongGradient)"
+    />
+    
+    <!-- Right Prong -->
+    <path 
+      d="M15 -20 L8 -15 L10 -10 L18 -15 Z" 
+      fill="url(#prongGradient)"
+    />
+  </g>
+  
+  <!-- Left Wave Spiral -->
+  <g transform="translate(25, 25)">
+    <path 
+      d="M-8 -8 Q-12 -12 -8 -16 Q-4 -20 0 -16 Q4 -12 0 -8 Q-4 -4 -8 -8" 
+      fill="url(#waveGradient)"
+      opacity="0.8"
+    />
+    <circle 
+      cx="-12" 
+      cy="-12" 
+      r="2" 
+      fill="url(#orbGradient)"
+    />
+  </g>
+  
+  <!-- Right Wave Pattern -->
+  <g transform="translate(75, 30)">
+    <path 
+      d="M0 0 Q-8 5 -12 0 Q-16 -5 -12 -10 Q-8 -15 0 -10 Q8 -5 0 0" 
+      fill="url(#waveGradient)"
+      opacity="0.7"
+    />
+    <path 
+      d="M-5 5 Q-10 10 -15 5 Q-20 0 -15 -5 Q-10 -10 -5 -5 Q0 0 -5 5" 
+      fill="url(#waveGradient)"
+      opacity="0.6"
+    />
+  </g>
+  
+  <!-- Additional Wave Elements -->
+  <g transform="translate(20, 70)">
+    <path 
+      d="M0 0 Q5 -5 10 0 Q15 5 10 10 Q5 15 0 10 Q-5 5 0 0" 
+      fill="url(#waveGradient)"
+      opacity="0.5"
+    />
+  </g>
+  
+  <g transform="translate(80, 75)">
+    <path 
+      d="M0 0 Q-5 -5 -10 0 Q-15 5 -10 10 Q-5 15 0 10 Q5 5 0 0" 
+      fill="url(#waveGradient)"
+      opacity="0.5"
+    />
+  </g>
+  
+  <!-- Gradients -->
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="backgroundGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0c1c2c" />
+      <stop offset="100%" stop-color="#001122" />
+    </radialGradient>
+    
+    <!-- Border Gradient -->
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00b4d8" />
+      <stop offset="50%" stop-color="#007ea7" />
+      <stop offset="100%" stop-color="#0096c7" />
+    </linearGradient>
+    
+    <!-- Trident Gradient -->
+    <linearGradient id="tridentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4fc3f7" />
+      <stop offset="50%" stop-color="#29b6f6" />
+      <stop offset="100%" stop-color="#0288d1" />
+    </linearGradient>
+    
+    <!-- Spear Gradient -->
+    <linearGradient id="spearGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#81d4fa" />
+      <stop offset="50%" stop-color="#4fc3f7" />
+      <stop offset="100%" stop-color="#1976d2" />
+    </linearGradient>
+    
+    <!-- Prong Gradient -->
+    <linearGradient id="prongGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64b5f6" />
+      <stop offset="50%" stop-color="#42a5f5" />
+      <stop offset="100%" stop-color="#1565c0" />
+    </linearGradient>
+    
+    <!-- Wave Gradient -->
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#29b6f6" />
+      <stop offset="50%" stop-color="#0288d1" />
+      <stop offset="100%" stop-color="#01579b" />
+    </linearGradient>
+    
+    <!-- Orb Gradient -->
+    <radialGradient id="orbGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#81d4fa" />
+      <stop offset="100%" stop-color="#1976d2" />
+    </radialGradient>
+  </defs>
+</svg>

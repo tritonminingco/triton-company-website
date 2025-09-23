@@ -17,8 +17,8 @@ const TeamSection = () => {
 
   // Group members by role category
   const roleCategories = {
-    'Leadership': ['Founder & CEO', 'Chief Communications Officer (CCO)', 'Chief Technology Officer (CTO)'],
-    'Engineering': ['Software Engineer', 'Full-Stack Developer', 'Backend Engineer', 'Electronics Engineer & ML Specialist', 'Senior Developer & Architect'],
+    'Leadership': ['Founder & CEO', 'Chief Communications Officer (CCO)', 'Chief Technology Officer (CTO)', 'Technical Strategy Lead'],
+    'Engineering': ['Software Engineer', 'Backend Engineer', 'Electronics Engineer & ML Specialist', 'Senior Developer & Architect'],
     'Robotics': ['Mechatronic Engineer & ROS2 Developer', 'Robotics & Software Engineer', 'Robotics & RL Engineer', 'Marine Robotics Engineer', 'Fleet Management & RL Engineer', 'Senior Robotics Engineer'],
     'Machine Learning': ['Deep Learning Engineer', 'Backend & ML Engineer', 'ML Developer & Tech Lead', 'ML Full-Stack Developer'],
     'Specialized': ['Technical Artist', 'Electrical Engineer', 'Embedded Software Engineer', 'Electronics Engineer & XR Developer']
@@ -91,12 +91,12 @@ const TeamSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="mb-16 text-center"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-orbitron font-bold mb-6">
+          <h2 className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl font-orbitron">
             <span className="gradient-text">Meet the Team</span>
           </h2>
-          <p className="text-xl text-ocean-text/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="max-w-3xl mx-auto text-xl leading-relaxed text-ocean-text/80">
             A diverse group of innovators, engineers, and visionaries united by our passion for 
             sustainable ocean mining and cutting-edge technology.
           </p>
@@ -108,32 +108,32 @@ const TeamSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
+          className="grid grid-cols-2 gap-6 mb-16 md:grid-cols-4"
         >
-          <div className="bg-ocean-dark/50 backdrop-blur-sm border border-ocean-primary/20 rounded-xl p-6 text-center">
-            <Users className="w-8 h-8 text-ocean-primary mx-auto mb-3" />
-            <div className="text-2xl font-orbitron font-bold text-ocean-text mb-1">
+          <div className="p-6 text-center border bg-ocean-dark/50 backdrop-blur-sm border-ocean-primary/20 rounded-xl">
+            <Users className="w-8 h-8 mx-auto mb-3 text-ocean-primary" />
+            <div className="mb-1 text-2xl font-bold font-orbitron text-ocean-text">
               {teamStats.totalMembers}
             </div>
             <div className="text-sm text-ocean-text/70">Team Members</div>
           </div>
-          <div className="bg-ocean-dark/50 backdrop-blur-sm border border-ocean-primary/20 rounded-xl p-6 text-center">
-            <Globe className="w-8 h-8 text-ocean-primary mx-auto mb-3" />
-            <div className="text-2xl font-orbitron font-bold text-ocean-text mb-1">
+          <div className="p-6 text-center border bg-ocean-dark/50 backdrop-blur-sm border-ocean-primary/20 rounded-xl">
+            <Globe className="w-8 h-8 mx-auto mb-3 text-ocean-primary" />
+            <div className="mb-1 text-2xl font-bold font-orbitron text-ocean-text">
               {teamStats.countries.length}
             </div>
             <div className="text-sm text-ocean-text/70">Countries</div>
           </div>
-          <div className="bg-ocean-dark/50 backdrop-blur-sm border border-ocean-primary/20 rounded-xl p-6 text-center">
-            <Code className="w-8 h-8 text-ocean-primary mx-auto mb-3" />
-            <div className="text-2xl font-orbitron font-bold text-ocean-text mb-1">
+          <div className="p-6 text-center border bg-ocean-dark/50 backdrop-blur-sm border-ocean-primary/20 rounded-xl">
+            <Code className="w-8 h-8 mx-auto mb-3 text-ocean-primary" />
+            <div className="mb-1 text-2xl font-bold font-orbitron text-ocean-text">
               {teamStats.expertise.length}
             </div>
             <div className="text-sm text-ocean-text/70">Expertise Areas</div>
           </div>
-          <div className="bg-ocean-dark/50 backdrop-blur-sm border border-ocean-primary/20 rounded-xl p-6 text-center">
-            <Award className="w-8 h-8 text-ocean-primary mx-auto mb-3" />
-            <div className="text-2xl font-orbitron font-bold text-ocean-text mb-1">
+          <div className="p-6 text-center border bg-ocean-dark/50 backdrop-blur-sm border-ocean-primary/20 rounded-xl">
+            <Award className="w-8 h-8 mx-auto mb-3 text-ocean-primary" />
+            <div className="mb-1 text-2xl font-bold font-orbitron text-ocean-text">
               50+
             </div>
             <div className="text-sm text-ocean-text/70">Years Experience</div>
@@ -175,12 +175,12 @@ const TeamSection = () => {
             <div key={category}>
               <motion.h3
                 variants={itemVariants}
-                className="text-2xl font-orbitron font-bold text-ocean-text mb-8 text-center"
+                className="mb-8 text-2xl font-bold text-center font-orbitron text-ocean-text"
               >
                 {category}
               </motion.h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {members.map((member) => (
                   <motion.div
                     key={member.id}
@@ -194,37 +194,37 @@ const TeamSection = () => {
                     
                     <div className="relative z-10">
                       {/* Avatar */}
-                      <div className="text-4xl mb-4 text-center">
-                        {member.avatar}
+                      <div className="mb-4 text-4xl text-center">
+                        {member.avatar.includes("/") ? <img className='m-auto' src={member.avatar} alt={member.name} width={200} height={200} /> : member.avatar}
                       </div>
                       
                       {/* Name & Role */}
-                      <div className="text-center mb-4">
-                        <h4 className="text-lg font-orbitron font-semibold text-ocean-text group-hover:text-ocean-primary transition-colors duration-300">
+                      <div className="mb-4 text-center">
+                        <h4 className="text-lg font-semibold transition-colors duration-300 font-orbitron text-ocean-text group-hover:text-ocean-primary">
                           {member.name}
                         </h4>
-                        <p className="text-sm text-ocean-primary/70 font-medium">
+                        <p className="text-sm font-medium text-ocean-primary/70">
                           {member.role}
                         </p>
                       </div>
                       
                       {/* Bio Preview */}
-                      <p className="text-ocean-text/70 text-sm leading-relaxed mb-4 line-clamp-3">
+                      <p className="mb-4 text-sm leading-relaxed text-ocean-text/70 line-clamp-3">
                         {member.bio}
                       </p>
                       
                       {/* Expertise Tags */}
-                      <div className="flex flex-wrap gap-2 mb-4">
+                      <div className="flex flex-wrap justify-center gap-2 mb-4">
                         {member.expertise.slice(0, 3).map((skill, index) => (
                           <span
                             key={index}
-                            className="px-2 py-1 bg-ocean-dark/30 text-ocean-text/80 text-xs rounded-full"
+                            className="px-2 py-1 text-xs rounded-full bg-ocean-dark/30 text-ocean-text/80"
                           >
                             {skill}
                           </span>
                         ))}
                         {member.expertise.length > 3 && (
-                          <span className="px-2 py-1 bg-ocean-dark/30 text-ocean-text/80 text-xs rounded-full">
+                          <span className="px-2 py-1 text-xs rounded-full bg-ocean-dark/30 text-ocean-text/80">
                             +{member.expertise.length - 3}
                           </span>
                         )}
@@ -237,7 +237,7 @@ const TeamSection = () => {
                             href={member.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-2 bg-ocean-dark/30 text-ocean-text/70 hover:text-ocean-primary hover:bg-ocean-primary/20 rounded-lg transition-all duration-300"
+                            className="p-2 transition-all duration-300 rounded-lg bg-ocean-dark/30 text-ocean-text/70 hover:text-ocean-primary hover:bg-ocean-primary/20"
                             onClick={(e) => e.stopPropagation()}
                           >
                             <Github size={16} />
@@ -248,7 +248,7 @@ const TeamSection = () => {
                             href={member.linkedin}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-2 bg-ocean-dark/30 text-ocean-text/70 hover:text-ocean-primary hover:bg-ocean-primary/20 rounded-lg transition-all duration-300"
+                            className="p-2 transition-all duration-300 rounded-lg bg-ocean-dark/30 text-ocean-text/70 hover:text-ocean-primary hover:bg-ocean-primary/20"
                             onClick={(e) => e.stopPropagation()}
                           >
                             <Linkedin size={16} />
@@ -259,7 +259,7 @@ const TeamSection = () => {
                             href={member.website || member.portfolio}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-2 bg-ocean-dark/30 text-ocean-text/70 hover:text-ocean-primary hover:bg-ocean-primary/20 rounded-lg transition-all duration-300"
+                            className="p-2 transition-all duration-300 rounded-lg bg-ocean-dark/30 text-ocean-text/70 hover:text-ocean-primary hover:bg-ocean-primary/20"
                             onClick={(e) => e.stopPropagation()}
                           >
                             <ExternalLink size={16} />
@@ -291,28 +291,28 @@ const TeamSection = () => {
             className="bg-ocean-dark border border-ocean-primary/30 rounded-2xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="text-center mb-6">
-              <div className="text-6xl mb-4">{selectedMember.avatar}</div>
-              <h3 className="text-2xl font-orbitron font-bold text-ocean-text mb-2">
+            <div className="mb-6 text-center">
+              <div className="mb-4 text-6xl">{selectedMember.avatar.includes("/") ? <img className='m-auto' src={selectedMember.avatar} alt={selectedMember.name} width={200} height={200} /> : selectedMember.avatar}</div>
+              <h3 className="mb-2 text-2xl font-bold font-orbitron text-ocean-text">
                 {selectedMember.name}
               </h3>
-              <p className="text-ocean-primary font-medium">{selectedMember.role}</p>
+              <p className="font-medium text-ocean-primary">{selectedMember.role}</p>
             </div>
             
             <div className="mb-6">
-              <p className="text-ocean-text/80 leading-relaxed mb-4">
+              <p className="mb-4 leading-relaxed text-ocean-text/80">
                 {selectedMember.bio}
               </p>
               
               <div className="mb-6">
-                <h4 className="text-lg font-orbitron font-semibold text-ocean-text mb-3">
+                <h4 className="mb-3 text-lg font-semibold font-orbitron text-ocean-text">
                   Expertise
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {selectedMember.expertise.map((skill, index) => (
                     <span
                       key={index}
-                      className="px-3 py-1 bg-ocean-primary/20 text-ocean-primary rounded-full text-sm"
+                      className="px-3 py-1 text-sm rounded-full bg-ocean-primary/20 text-ocean-primary"
                     >
                       {skill}
                     </span>
@@ -326,7 +326,7 @@ const TeamSection = () => {
                     href={selectedMember.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2 px-4 py-2 bg-ocean-primary/20 text-ocean-primary rounded-lg hover:bg-ocean-primary/30 transition-colors duration-300"
+                    className="flex items-center px-4 py-2 space-x-2 transition-colors duration-300 rounded-lg bg-ocean-primary/20 text-ocean-primary hover:bg-ocean-primary/30"
                   >
                     <Github size={20} />
                     <span>GitHub</span>
@@ -337,7 +337,7 @@ const TeamSection = () => {
                     href={selectedMember.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2 px-4 py-2 bg-ocean-primary/20 text-ocean-primary rounded-lg hover:bg-ocean-primary/30 transition-colors duration-300"
+                    className="flex items-center px-4 py-2 space-x-2 transition-colors duration-300 rounded-lg bg-ocean-primary/20 text-ocean-primary hover:bg-ocean-primary/30"
                   >
                     <Linkedin size={20} />
                     <span>LinkedIn</span>
@@ -348,7 +348,7 @@ const TeamSection = () => {
                     href={selectedMember.website || selectedMember.portfolio}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2 px-4 py-2 bg-ocean-primary/20 text-ocean-primary rounded-lg hover:bg-ocean-primary/30 transition-colors duration-300"
+                    className="flex items-center px-4 py-2 space-x-2 transition-colors duration-300 rounded-lg bg-ocean-primary/20 text-ocean-primary hover:bg-ocean-primary/30"
                   >
                     <ExternalLink size={20} />
                     <span>Portfolio</span>
@@ -359,7 +359,7 @@ const TeamSection = () => {
             
             <button
               onClick={() => setSelectedMember(null)}
-              className="w-full py-3 bg-ocean-primary/20 text-ocean-primary rounded-lg hover:bg-ocean-primary/30 transition-colors duration-300"
+              className="w-full py-3 transition-colors duration-300 rounded-lg bg-ocean-primary/20 text-ocean-primary hover:bg-ocean-primary/30"
             >
               Close
             </button>

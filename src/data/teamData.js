@@ -72,6 +72,18 @@ export const teamMembers = [
     borderColor: 'border-yellow-500/20'
   },
   {
+  id: 'slavi',
+  name: 'Slavi',
+  role: 'Technical Strategy Lead',
+  bio: '17-year-old full-stack developer with 4 years in tech. Architects digital systems that support ocean technology commercialization and scalable business operations.',
+  expertise: ['Technical Strategy', 'Product Architecture', 'Business Technology'],
+  github: 'https://github.com/Slaviiiii',
+  avatar: './slavi.png',
+  color: 'from-cyan-600 to-blue-600',
+  bgGradient: 'from-cyan-600/10 to-blue-600/5',
+  borderColor: 'border-cyan-600/20'
+},
+  {
     id: 'japhet',
     name: 'Japhet Cunanan',
     role: 'Software Engineer',
@@ -247,19 +259,6 @@ export const teamMembers = [
     color: 'from-indigo-600 to-purple-600',
     bgGradient: 'from-indigo-600/10 to-purple-600/5',
     borderColor: 'border-indigo-600/20'
-  },
-  
-  {
-    id: 'slavi',
-    name: 'Slavi',
-    role: 'Full-Stack & Game Developer',
-    bio: '17-year-old developer from Bulgaria with 4 years in tech. 2 years at SoftUni bootcamp learning fundamentals, then exploring cool ideas and building projects. Main passions are full-stack web development and game development. Won 2nd place in Supabase Hackathon 2024.',
-    expertise: ['Full-Stack Development', 'Game Development', 'React', 'JavaScript', 'Blockchain Auditing'],
-    github: 'https://github.com/Slaviiiii',
-    avatar: '🎮',
-    color: 'from-green-600 to-emerald-600',
-    bgGradient: 'from-green-600/10 to-emerald-600/5',
-    borderColor: 'border-green-600/20'
   },
   {
     id: 'pele',

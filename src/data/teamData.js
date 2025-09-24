@@ -75,7 +75,7 @@ export const teamMembers = [
     id: 'slavi',
     name: 'Slavi',
     role: 'Technical Strategy Lead',
-    bio: '17-year-old full-stack developer with 4 years in tech. Architects digital systems that support ocean technology commercialization and scalable business operations.',
+    bio: 'Full-stack developer with four years of experience architecting digital systems that enable ocean technology commercialization and scalable business operations.',
     expertise: ['Technical Strategy', 'Product Architecture', 'Business Technology'],
     github: 'https://github.com/Slaviiiii',
     avatar: './slavi.png',

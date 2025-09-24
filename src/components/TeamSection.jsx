@@ -195,7 +195,7 @@ const TeamSection = () => {
                     <div className="relative z-10">
                       {/* Avatar */}
                       <div className="mb-4 text-4xl text-center">
-                        {member.avatar.includes("/") ? <img className='m-auto rounded-full w-16 h-16 object-cover' src={member.avatar} alt={member.name} /> : member.avatar}
+                        {member.avatar.includes("/") ? <img className='object-cover w-16 h-16 m-auto rounded-full' src={member.avatar} alt={member.name} /> : member.avatar}
                       </div>
                       
                       {/* Name & Role */}
@@ -292,7 +292,7 @@ const TeamSection = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="mb-6 text-center">
-              <div className="mb-4 text-6xl">{selectedMember.avatar.includes("/") ? <img className='m-auto rounded-full w-24 h-24 object-cover' src={selectedMember.avatar} alt={selectedMember.name} /> : selectedMember.avatar}</div>
+              <div className="mb-4 text-6xl">{selectedMember.avatar.includes("/") ? <img className='object-cover m-auto rounded-full w-36 h-36' src={selectedMember.avatar} alt={selectedMember.name} /> : selectedMember.avatar}</div>
               <h3 className="mb-2 text-2xl font-bold font-orbitron text-ocean-text">
                 {selectedMember.name}
               </h3>

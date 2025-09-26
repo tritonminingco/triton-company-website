@@ -188,18 +188,6 @@ export const teamMembers = [
     borderColor: 'border-fuchsia-500/20'
   },
   {
-    id: 'ricky',
-    name: 'Ricky (PikinForContry)',
-    role: 'Full-Stack Developer',
-    bio: 'Full-stack developer with 2 years experience in Edmonton, Canada. Building projects about neural machine translation to low-resource languages after studying deep learning and machine learning frameworks.',
-    expertise: ['Full-Stack Development', 'Neural Machine Translation', 'Deep Learning', 'NLP'],
-    github: 'https://github.com/SakaRicky',
-    avatar: '🌍',
-    color: 'from-lime-500 to-green-500',
-    bgGradient: 'from-lime-500/10 to-green-500/5',
-    borderColor: 'border-lime-500/20'
-  },
-  {
     id: 'rushabh',
     name: 'Rushabh (Rsd)',
     role: 'Robotics & RL Engineer',

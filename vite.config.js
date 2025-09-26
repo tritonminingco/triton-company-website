@@ -16,4 +16,18 @@ export default defineConfig({
         pure_funcs: ['console.log'] // Remove specific functions
       }
     },
+    
+    // Rollup options for chunk splitting (289 KiB JS reduction)
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          animations: ['framer-motion'],
+          charts: ['chart.js', 'react-chartjs-2'],
+          maps: ['leaflet', 'react-leaflet'],
+          icons: ['lucide-react']
+        }
+      }
+    }
+  }
 })

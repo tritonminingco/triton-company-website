@@ -21,7 +21,7 @@ const TeamSection = () => {
     'Engineering': ['Software Engineer', 'Backend Engineer', 'Electronics Engineer & ML Specialist', 'Senior Developer & Architect'],
     'Robotics': ['Mechatronic Engineer & ROS2 Developer', 'Robotics & Software Engineer', 'Robotics & RL Engineer', 'Marine Robotics Engineer', 'Fleet Management & RL Engineer', 'Senior Robotics Engineer'],
     'Machine Learning': ['Deep Learning Engineer', 'Backend & ML Engineer', 'ML Developer & Tech Lead', 'ML Full-Stack Developer'],
-    'Specialized': ['Technical Artist', 'Electrical Engineer', 'Embedded Software Engineer', 'Electronics Engineer & XR Developer']
+    'Specialized': ['Technical Artist', 'Electrical Engineer', 'Embedded Software Engineer', 'Electronics Engineer & XR Developer', 'Treasure Hunter & Content Creator']
   };
 
   const getRoleCategory = (role) => {

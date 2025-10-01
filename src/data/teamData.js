@@ -285,6 +285,19 @@ export const teamMembers = [
     color: 'from-cyan-600 to-blue-600',
     bgGradient: 'from-cyan-600/10 to-blue-600/5',
     borderColor: 'border-cyan-600/20'
+  },
+  {
+    id: 'lewis',
+    name: 'Lewis Bright',
+    role: 'Treasure Hunter & Content Creator',
+    bio: 'Treasure hunter who goes around the world finding the craziest treasures and artefacts that have been lost. My goal is to show my skills in finding the lost and making the impossible very possible. I also do social media where we show some of the stuff we find and show our adventures.',
+    expertise: ['Magnet Fishing', 'Adventure Storytelling', 'Artefact Recovery'],
+    instagram: 'https://www.instagram.com/callmemagnetic',
+    youtube: 'https://www.youtube.com/@CallMeMagnetic',
+    avatar: './lewis.png',
+    color: 'from-cyan-600 to-blue-600',
+    bgGradient: 'from -cyan-600/10 to-blue-600/5',
+    borderColor: 'border-cyan-600/20'
   }
 ];
 

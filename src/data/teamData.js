@@ -296,7 +296,7 @@ export const teamMembers = [
     youtube: 'https://www.youtube.com/@CallMeMagnetic',
     avatar: './lewis.png',
     color: 'from-cyan-600 to-blue-600',
-    bgGradient: 'from -cyan-600/10 to-blue-600/5',
+    bgGradient: 'from-cyan-600/10 to-blue-600/5',
     borderColor: 'border-cyan-600/20'
   }
 ];
@@ -304,7 +304,7 @@ export const teamMembers = [
 // Team statistics
 export const teamStats = {
   totalMembers: teamMembers.length,
-  countries: ['USA', 'France', 'Tunisia', 'Colombia', 'Czech Republic', 'Vietnam', 'Bulgaria', 'Thailand', 'India', 'Canada', 'Taiwan', 'Pakistan'],
+  countries: ['USA', 'France', 'Tunisia', 'Colombia', 'Czech Republic', 'Vietnam', 'Bulgaria', 'Thailand', 'India', 'Canada', 'Taiwan', 'Pakistan', 'United Kingdom'],
   expertise: ['Robotics', 'Machine Learning', 'Software Engineering', 'Electronics', 'Communications', '3D Art', 'Marine Technology'],
   experience: '50+ years combined experience'
 };

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, ExternalLink, Users, Globe, Award, Code } from 'lucide-react';
+import { Github, Linkedin, ExternalLink, Users, Globe, Award, Code, Youtube, Instagram } from 'lucide-react';
 import { teamMembers, teamStats } from '../data/teamData';
 
 const TeamSection = () => {
@@ -10,7 +10,7 @@ const TeamSection = () => {
   // Filter members by expertise
   const filteredMembers = teamMembers.filter(member => {
     if (filter === 'all') return true;
-    return member.expertise.some(exp => 
+    return member.expertise.some(exp =>
       exp.toLowerCase().includes(filter.toLowerCase())
     );
   });
@@ -97,7 +97,7 @@ const TeamSection = () => {
             <span className="gradient-text">Meet the Team</span>
           </h2>
           <p className="max-w-3xl mx-auto text-xl leading-relaxed text-ocean-text/80">
-            A diverse group of innovators, engineers, and visionaries united by our passion for 
+            A diverse group of innovators, engineers, and visionaries united by our passion for
             sustainable ocean mining and cutting-edge technology.
           </p>
         </motion.div>
@@ -154,9 +154,9 @@ const TeamSection = () => {
               onClick={() => setFilter(filterType)}
               className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
                 filter === filterType
-                  ? 'bg-ocean-primary text-ocean-dark'
-                  : 'bg-ocean-dark/50 text-ocean-text/70 hover:bg-ocean-primary/20 hover:text-ocean-primary'
-              }`}
+                ? 'bg-ocean-primary text-ocean-dark'
+                : 'bg-ocean-dark/50 text-ocean-text/70 hover:bg-ocean-primary/20 hover:text-ocean-primary'
+                }`}
             >
               {filterType.charAt(0).toUpperCase() + filterType.slice(1)}
             </button>
@@ -179,7 +179,7 @@ const TeamSection = () => {
               >
                 {category}
               </motion.h3>
-              
+
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {members.map((member) => (
                   <motion.div
@@ -191,13 +191,13 @@ const TeamSection = () => {
                   >
                     {/* Hover Gradient Background */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${member.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
-                    
+
                     <div className="relative z-10">
                       {/* Avatar */}
                       <div className="mb-4 text-4xl text-center">
                         {member.avatar.includes("/") ? <img className='object-cover w-16 h-16 m-auto rounded-full' src={member.avatar} alt={member.name} /> : member.avatar}
                       </div>
-                      
+
                       {/* Name & Role */}
                       <div className="mb-4 text-center">
                         <h4 className="text-lg font-semibold transition-colors duration-300 font-orbitron text-ocean-text group-hover:text-ocean-primary">
@@ -207,12 +207,12 @@ const TeamSection = () => {
                           {member.role}
                         </p>
                       </div>
-                      
+
                       {/* Bio Preview */}
                       <p className="mb-4 text-sm leading-relaxed text-ocean-text/70 line-clamp-3">
                         {member.bio}
                       </p>
-                      
+
                       {/* Expertise Tags */}
                       <div className="flex flex-wrap justify-center gap-2 mb-4">
                         {member.expertise.slice(0, 3).map((skill, index) => (
@@ -229,7 +229,7 @@ const TeamSection = () => {
                           </span>
                         )}
                       </div>
-                      
+
                       {/* Social Links */}
                       <div className="flex justify-center space-x-3">
                         {member.github && (
@@ -252,6 +252,28 @@ const TeamSection = () => {
                             onClick={(e) => e.stopPropagation()}
                           >
                             <Linkedin size={16} />
+                          </a>
+                        )}
+                        {member.instagram && (
+                          <a
+                            href={member.instagram}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 transition-all duration-300 rounded-lg bg-ocean-dark/30 text-ocean-text/70 hover:text-ocean-primary hover:bg-ocean-primary/20"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <Instagram size={16} />
+                          </a>
+                        )}
+                        {member.youtube && (
+                          <a
+                            href={member.youtube}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 transition-all duration-300 rounded-lg bg-ocean-dark/30 text-ocean-text/70 hover:text-ocean-primary hover:bg-ocean-primary/20"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <Youtube size={16} />
                           </a>
                         )}
                         {(member.website || member.portfolio) && (
@@ -298,12 +320,12 @@ const TeamSection = () => {
               </h3>
               <p className="font-medium text-ocean-primary">{selectedMember.role}</p>
             </div>
-            
+
             <div className="mb-6">
               <p className="mb-4 leading-relaxed text-ocean-text/80">
                 {selectedMember.bio}
               </p>
-              
+
               <div className="mb-6">
                 <h4 className="mb-3 text-lg font-semibold font-orbitron text-ocean-text">
                   Expertise
@@ -319,7 +341,7 @@ const TeamSection = () => {
                   ))}
                 </div>
               </div>
-              
+
               <div className="flex justify-center space-x-4">
                 {selectedMember.github && (
                   <a
@@ -343,6 +365,28 @@ const TeamSection = () => {
                     <span>LinkedIn</span>
                   </a>
                 )}
+                {selectedMember.instagram && (
+                  <a
+                    href={selectedMember.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center px-4 py-2 space-x-2 transition-colors duration-300 rounded-lg bg-ocean-primary/20 text-ocean-primary hover:bg-ocean-primary/30"
+                  >
+                    <Instagram size={20} />
+                    <span>Instagram</span>
+                  </a>
+                )}
+                {selectedMember.youtube && (
+                  <a
+                    href={selectedMember.youtube}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center px-4 py-2 space-x-2 transition-colors duration-300 rounded-lg bg-ocean-primary/20 text-ocean-primary hover:bg-ocean-primary/30"
+                  >
+                    <Youtube size={20} />
+                    <span>YouTube</span>
+                  </a>
+                )}
                 {(selectedMember.website || selectedMember.portfolio) && (
                   <a
                     href={selectedMember.website || selectedMember.portfolio}
@@ -356,7 +400,7 @@ const TeamSection = () => {
                 )}
               </div>
             </div>
-            
+
             <button
               onClick={() => setSelectedMember(null)}
               className="w-full py-3 transition-colors duration-300 rounded-lg bg-ocean-primary/20 text-ocean-primary hover:bg-ocean-primary/30"

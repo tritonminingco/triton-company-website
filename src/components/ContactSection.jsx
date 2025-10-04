@@ -72,7 +72,7 @@ const ContactSection = () => {
       title: 'Schedule a Demo',
       description: 'See our technology in action',
       icon: Calendar,
-      action: 'https://calendly.com/tritonminingc',
+      action: 'https://calendly.com/tritonminingco',
       color: 'from-blue-500 to-cyan-500'
     },
     {

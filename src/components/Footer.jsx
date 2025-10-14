@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUp, Github, Twitter, Linkedin, Mail, ExternalLink } from 'lucide-react';
 import TritonLogo from './TritonLogo';
@@ -43,11 +42,11 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-ocean-dark border-t border-ocean-primary/20">
+    <footer className="border-t bg-ocean-dark border-ocean-primary/20">
       <div className="container-max">
         {/* Main Footer Content */}
         <div className="py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-6">
             {/* Company Info */}
             <div className="lg:col-span-2">
               <motion.div
@@ -56,13 +55,13 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="mb-6"
               >
-                <div className="flex items-center space-x-3 mb-4">
-                  <TritonLogo size={32} className="flex-shrink-0" />
-                  <span className="text-xl font-orbitron font-bold gradient-text">
+                <div className="flex items-center mb-4 space-x-3">
+                  <TritonLogo size={36} className="flex-shrink-0" />
+                  <span className="text-xl font-bold font-orbitron gradient-text">
                     Triton Mining Co.
                   </span>
                 </div>
-                <p className="text-ocean-text/70 leading-relaxed mb-6">
+                <p className="mb-6 leading-relaxed text-ocean-text/70">
                   Pioneering sustainable ocean mining through advanced autonomous systems, 
                   real-time environmental monitoring, and transparent compliance management.
                 </p>
@@ -94,7 +93,7 @@ const Footer = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="text-lg font-orbitron font-semibold text-ocean-text mb-4"
+                  className="mb-4 text-lg font-semibold font-orbitron text-ocean-text"
                 >
                   {category}
                 </motion.h3>
@@ -109,11 +108,11 @@ const Footer = () => {
                     <li key={link.name}>
                       <a
                         href={link.href}
-                        className="text-ocean-text/70 hover:text-ocean-primary transition-colors duration-300 text-sm flex items-center group"
+                        className="flex items-center text-sm transition-colors duration-300 text-ocean-text/70 hover:text-ocean-primary group"
                       >
                         {link.name}
                         {link.href.startsWith('http') && (
-                          <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          <ExternalLink className="w-3 h-3 ml-1 transition-opacity duration-300 opacity-0 group-hover:opacity-100" />
                         )}
                       </a>
                     </li>
@@ -131,27 +130,27 @@ const Footer = () => {
           viewport={{ once: true }}
           className="py-8 border-t border-ocean-primary/20"
         >
-          <div className="bg-gradient-to-r from-ocean-primary/10 to-ocean-accent/10 rounded-xl p-6">
-            <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+          <div className="p-6 bg-gradient-to-r from-ocean-primary/10 to-ocean-accent/10 rounded-xl">
+            <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
               <div>
-                <h3 className="text-lg font-orbitron font-semibold text-ocean-text mb-2">
+                <h3 className="mb-2 text-lg font-semibold font-orbitron text-ocean-text">
                   Stay Updated
                 </h3>
-                <p className="text-ocean-text/70 text-sm">
+                <p className="text-sm text-ocean-text/70">
                   Get the latest news about sustainable ocean mining and our technology.
                 </p>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+              <div className="flex flex-col w-full gap-3 sm:flex-row md:w-auto">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="px-4 py-2 bg-ocean-dark/50 border border-ocean-primary/30 rounded-lg text-ocean-text placeholder-ocean-text/60 focus:outline-none focus:border-ocean-primary transition-colors duration-300 text-sm"
+                  className="px-4 py-2 text-sm transition-colors duration-300 border rounded-lg bg-ocean-dark/50 border-ocean-primary/30 text-ocean-text placeholder-ocean-text/60 focus:outline-none focus:border-ocean-primary"
                 />
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="btn-primary text-sm whitespace-nowrap"
+                  className="text-sm btn-primary whitespace-nowrap"
                 >
                   Subscribe
                 </motion.button>
@@ -162,19 +161,19 @@ const Footer = () => {
 
         {/* Bottom Footer */}
         <div className="py-6 border-t border-ocean-primary/20">
-          <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+          <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-ocean-text/70 text-sm"
+              className="text-sm text-ocean-text/70"
             >
               © 2024 Triton Mining Co. All rights reserved. | 
-              <a href="#privacy" className="hover:text-ocean-primary transition-colors duration-300 ml-1">
+              <a href="#privacy" className="ml-1 transition-colors duration-300 hover:text-ocean-primary">
                 Privacy Policy
               </a>
               {' | '}
-              <a href="#terms" className="hover:text-ocean-primary transition-colors duration-300">
+              <a href="#terms" className="transition-colors duration-300 hover:text-ocean-primary">
                 Terms of Service
               </a>
             </motion.p>
@@ -203,7 +202,7 @@ const Footer = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 w-12 h-12 bg-ocean-primary hover:bg-ocean-accent text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 z-50"
+        className="fixed z-50 flex items-center justify-center w-12 h-12 text-white transition-all duration-300 rounded-full shadow-lg bottom-8 right-8 bg-ocean-primary hover:bg-ocean-accent hover:shadow-xl"
         aria-label="Back to top"
       >
         <ArrowUp className="w-6 h-6" />

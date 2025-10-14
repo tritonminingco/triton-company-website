@@ -53,19 +53,19 @@ const Navigation = () => {
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-3"
             >
-              <TritonLogo size={32} className="flex-shrink-0" />
-              <span className="text-xl font-orbitron font-bold gradient-text">
+              <TritonLogo size={38} className="flex-shrink-0" />
+              <span className="text-xl font-bold font-orbitron gradient-text">
                 Triton
               </span>
             </motion.div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="items-center hidden space-x-8 md:flex">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => handleNavClick(item.href)}
-                  className="text-ocean-text hover:text-ocean-primary transition-colors duration-300 font-medium"
+                  className="font-medium transition-colors duration-300 text-ocean-text hover:text-ocean-primary"
                 >
                   {item.name}
                 </button>
@@ -79,7 +79,7 @@ const Navigation = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setIsSearchOpen(true)}
-                className="p-2 text-ocean-text hover:text-ocean-primary transition-colors duration-300"
+                className="p-2 transition-colors duration-300 text-ocean-text hover:text-ocean-primary"
                 aria-label="Search"
               >
                 <Search size={20} />
@@ -90,7 +90,7 @@ const Navigation = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden p-2 text-ocean-text hover:text-ocean-primary transition-colors duration-300"
+                className="p-2 transition-colors duration-300 md:hidden text-ocean-text hover:text-ocean-primary"
                 aria-label="Toggle menu"
               >
                 {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -106,14 +106,14 @@ const Navigation = () => {
             opacity: isMobileMenuOpen ? 1 : 0,
             height: isMobileMenuOpen ? 'auto' : 0,
           }}
-          className="md:hidden overflow-hidden bg-ocean-dark/95 backdrop-blur-md border-t border-ocean-primary/20"
+          className="overflow-hidden border-t md:hidden bg-ocean-dark/95 backdrop-blur-md border-ocean-primary/20"
         >
           <div className="px-4 py-4 space-y-4">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => handleNavClick(item.href)}
-                className="block w-full text-left text-ocean-text hover:text-ocean-primary transition-colors duration-300 font-medium py-2"
+                className="block w-full py-2 font-medium text-left transition-colors duration-300 text-ocean-text hover:text-ocean-primary"
               >
                 {item.name}
               </button>
@@ -128,7 +128,7 @@ const Navigation = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-ocean-dark/95 backdrop-blur-md z-50 flex items-center justify-center"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-ocean-dark/95 backdrop-blur-md"
           onClick={() => setIsSearchOpen(false)}
         >
           <motion.div
@@ -142,12 +142,12 @@ const Navigation = () => {
               <input
                 type="text"
                 placeholder="Search Triton ecosystem..."
-                className="w-full px-6 py-4 text-xl bg-ocean-dark border-2 border-ocean-primary rounded-lg text-ocean-text placeholder-ocean-text/60 focus:outline-none focus:border-ocean-accent"
+                className="w-full px-6 py-4 text-xl border-2 rounded-lg bg-ocean-dark border-ocean-primary text-ocean-text placeholder-ocean-text/60 focus:outline-none focus:border-ocean-accent"
                 autoFocus
               />
               <button
                 onClick={() => setIsSearchOpen(false)}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-ocean-text hover:text-ocean-primary transition-colors duration-300"
+                className="absolute transition-colors duration-300 transform -translate-y-1/2 right-4 top-1/2 text-ocean-text hover:text-ocean-primary"
               >
                 <X size={24} />
               </button>
@@ -155,12 +155,12 @@ const Navigation = () => {
             
             {/* Search Suggestions */}
             <div className="mt-6 space-y-2">
-              <p className="text-ocean-text/60 text-sm mb-3">Popular searches:</p>
+              <p className="mb-3 text-sm text-ocean-text/60">Popular searches:</p>
               <div className="flex flex-wrap gap-2">
                 {['DeepSeaGuard', 'Luna AUV', 'CrabBots', 'SeaLink', 'Environmental Monitoring', 'Compliance'].map((term) => (
                   <button
                     key={term}
-                    className="px-3 py-1 bg-ocean-primary/20 text-ocean-primary rounded-full text-sm hover:bg-ocean-primary/30 transition-colors duration-300"
+                    className="px-3 py-1 text-sm transition-colors duration-300 rounded-full bg-ocean-primary/20 text-ocean-primary hover:bg-ocean-primary/30"
                   >
                     {term}
                   </button>

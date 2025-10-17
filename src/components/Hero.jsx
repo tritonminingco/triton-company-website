@@ -26,14 +26,14 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative flex items-center justify-center min-h-screen overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-ocean-dark via-ocean-dark to-ocean-primary/20">
         {/* Floating Particles */}
         {particles.map((particle) => (
           <motion.div
             key={particle.id}
-            className="absolute w-1 h-1 bg-ocean-primary rounded-full opacity-30"
+            className="absolute w-1 h-1 rounded-full bg-ocean-primary opacity-30"
             style={{
               left: `${particle.x}%`,
               top: `${particle.y}%`,
@@ -53,12 +53,12 @@ const Hero = () => {
         ))}
         
         {/* Gradient Orbs */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-ocean-primary/10 rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-ocean-accent/10 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute rounded-full top-1/4 left-1/4 w-96 h-96 bg-ocean-primary/10 blur-3xl animate-pulse-slow"></div>
+        <div className="absolute rounded-full bottom-1/4 right-1/4 w-96 h-96 bg-ocean-accent/10 blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }}></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container-max text-center px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 px-4 text-center container-max sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -70,11 +70,11 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-orbitron font-bold mb-6 leading-tight"
+            className="mb-6 text-2xl font-bold leading-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-orbitron"
           >
             <span className="gradient-text whitespace-nowrap">Redefining Deep-Sea Mining</span>
             <br />
-            <span className="text-ocean-text text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">Sustainable, autonomous, and transparent by design.</span>
+            <span className="text-lg text-ocean-text sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">Sustainable, autonomous, and transparent by design.</span>
           </motion.h1>
 
           {/* Subtext */}
@@ -82,7 +82,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg sm:text-xl lg:text-2xl text-ocean-text/80 mb-8 max-w-3xl mx-auto leading-relaxed"
+            className="max-w-3xl mx-auto mb-8 text-lg leading-relaxed sm:text-xl lg:text-2xl text-ocean-text/80"
           >
           </motion.p>
 
@@ -99,10 +99,10 @@ const Hero = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
-                className="flex items-center space-x-2 px-4 py-2 bg-ocean-primary/10 rounded-full border border-ocean-primary/30"
+                className="flex items-center px-4 py-2 space-x-2 border rounded-full bg-ocean-primary/10 border-ocean-primary"
               >
-                <div className="w-2 h-2 bg-ocean-primary rounded-full"></div>
-                <span className="text-ocean-text font-medium">{feature}</span>
+                <div className="w-2 h-2 rounded-full bg-ocean-primary"></div>
+                <span className="font-medium text-ocean-text">{feature}</span>
               </motion.div>
             ))}
           </motion.div>
@@ -112,24 +112,24 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={scrollToEcosystem}
-              className="btn-primary flex items-center space-x-2 group"
+              className="flex items-center space-x-2 btn-primary group"
             >
               <span>Explore the Technology</span>
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
+              <ArrowRight size={20} className="transition-transform duration-300 group-hover:translate-x-1" />
             </motion.button>
 
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-secondary flex items-center space-x-2 group"
+              className="flex items-center space-x-2 btn-secondary group"
             >
-              <Play size={20} className="group-hover:scale-110 transition-transform duration-300" />
+              <Play size={20} className="transition-transform duration-300 group-hover:scale-110" />
               <span>Watch Demo</span>
             </motion.button>
           </motion.div>
@@ -139,7 +139,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 max-w-4xl mx-auto"
+            className="grid max-w-4xl grid-cols-2 gap-8 mx-auto mt-20 md:grid-cols-4"
           >
             {[
               { number: '95%', label: 'Environmental Compliance' },
@@ -154,7 +154,7 @@ const Hero = () => {
                 transition={{ duration: 0.5, delay: 1.2 + index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-xl sm:text-2xl lg:text-3xl font-inter font-bold gradient-text mb-2">
+                <div className="mb-2 text-xl font-bold sm:text-2xl lg:text-3xl font-inter gradient-text">
                   {stat.number}
                 </div>
                 <div className="text-sm sm:text-base text-ocean-text/70">
@@ -171,13 +171,13 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute transform -translate-x-1/2 bottom-8 left-1/2"
       >
         <motion.button
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
           onClick={scrollToEcosystem}
-          className="text-ocean-text hover:text-ocean-primary transition-colors duration-300"
+          className="transition-colors duration-300 text-ocean-text hover:text-ocean-primary"
           aria-label="Scroll to ecosystem"
         >
           <ChevronDown size={32} />

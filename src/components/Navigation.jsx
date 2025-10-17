@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { motion } from 'framer-motion';
-import { Search, Menu, X } from 'lucide-react';
+import { Search, Menu, X, Sun, Moon } from 'lucide-react';
 import TritonLogo from './TritonLogo';
+import { ThemeContext } from '../contexts/ThemeContext';
 
 const Navigation = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -60,7 +62,7 @@ const Navigation = () => {
             </motion.div>
 
             {/* Desktop Navigation */}
-            <div className="items-center hidden space-x-8 md:flex">
+            <div className="items-center hidden space-x-8 min-[920px]:flex">
               {navItems.map((item) => (
                 <button
                   key={item.name}
@@ -85,12 +87,23 @@ const Navigation = () => {
                 <Search size={20} />
               </motion.button>
 
+              {/* Theme Toggle Button */}
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={toggleTheme}
+                className="p-2 transition-colors duration-300 text-ocean-text hover:text-ocean-primary"
+                aria-label="Toggle theme"
+              >
+                {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+              </motion.button>
+
               {/* Mobile Menu Button */}
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="p-2 transition-colors duration-300 md:hidden text-ocean-text hover:text-ocean-primary"
+                className="p-2 transition-colors duration-300 min-[920px]:hidden text-ocean-text hover:text-ocean-primary"
                 aria-label="Toggle menu"
               >
                 {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -106,7 +119,7 @@ const Navigation = () => {
             opacity: isMobileMenuOpen ? 1 : 0,
             height: isMobileMenuOpen ? 'auto' : 0,
           }}
-          className="overflow-hidden border-t md:hidden bg-ocean-dark/95 backdrop-blur-md border-ocean-primary/20"
+          className="overflow-hidden border-t min-[920px]:hidden bg-ocean-dark/95 backdrop-blur-md border-ocean-primary/20"
         >
           <div className="px-4 py-4 space-y-4">
             {navItems.map((item) => (

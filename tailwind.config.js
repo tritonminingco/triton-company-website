@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -11,11 +12,11 @@ export default {
         'orbitron': ['Orbitron', 'monospace'],
       },
       colors: {
-        'ocean-dark': '#0c1c2c',
-        'ocean-primary': '#00b4d8',
-        'ocean-secondary': '#007ea7',
-        'ocean-text': '#e0f7ff',
-        'ocean-accent': '#0096c7',
+        'ocean-dark': 'var(--ocean-dark)',
+        'ocean-primary': 'var(--ocean-primary)',
+        'ocean-secondary': 'var(--ocean-secondary)',
+        'ocean-text': 'var(--ocean-text)',
+        'ocean-accent': 'var(--ocean-accent)',
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',

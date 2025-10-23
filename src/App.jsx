@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { useScroll } from 'framer-motion';
 import Hero from './components/Hero';
 import Navigation from './components/Navigation';
 import EcosystemOverview from './components/EcosystemOverview';

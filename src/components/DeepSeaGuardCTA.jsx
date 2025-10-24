@@ -147,12 +147,12 @@ const DeepSeaGuardCTA = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <motion.button
                   whileHover={{ scale: 1.1, rotate: 90 }}
                   whileTap={{ scale: 0.9 }}
                   onClick={handleClose}
-                  className="p-2 transition-colors duration-300 text-ocean-text/70 hover:text-ocean-text"
+                  className="absolute right-[-16px] p-2 transition-colors duration-300 top-[-22px] text-ocean-text/70 hover:text-ocean-text"
                 >
                   <X size={24} />
                 </motion.button>

@@ -37,7 +37,7 @@ const Footer = () => {
   const socialLinks = [
     { name: 'GitHub', icon: Github, href: 'https://github.com/tritonmining', color: 'hover:text-gray-400' },
     { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/tritonmining', color: 'hover:text-blue-400' },
-    { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/company/tritonmining', color: 'hover:text-blue-600' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/triton-mining-co/', color: 'hover:text-blue-600' },
     { name: 'Email', icon: Mail, href: 'mailto:info@tritonmining.com', color: 'hover:text-ocean-primary' }
   ];
 

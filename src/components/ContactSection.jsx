@@ -44,7 +44,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email',
-        details: ['contact@tritonmining.io', 'contact@tritonmining.io'],
+      details: ['contact@tritonmining.io'],
       action: 'mailto:rachel@tritonmining.io'
     },
     {
@@ -120,30 +120,30 @@ const ContactSection = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="text-center mb-16"
+          className="mb-16 text-center"
         >
           <motion.h2
             variants={itemVariants}
-            className="text-3xl sm:text-4xl lg:text-5xl font-orbitron font-bold mb-6"
+            className="mb-6 text-3xl font-bold sm:text-4xl lg:text-5xl font-orbitron"
           >
             <span className="gradient-text">Get in Touch</span>
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-lg sm:text-xl text-ocean-text/80 max-w-3xl mx-auto leading-relaxed"
+            className="max-w-3xl mx-auto text-lg leading-relaxed sm:text-xl text-ocean-text/80"
           >
             Ready to learn more about sustainable ocean mining? We'd love to hear from you. 
             Get in touch with our team or schedule a demo to see our technology in action.
           </motion.p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           {/* Contact Form */}
           <motion.div
             variants={itemVariants}
-            className="bg-ocean-dark/50 backdrop-blur-sm border border-ocean-primary/20 rounded-xl p-8"
+            className="p-8 border bg-ocean-dark/50 backdrop-blur-sm border-ocean-primary/20 rounded-xl"
           >
-            <h3 className="text-2xl font-orbitron font-semibold mb-6 text-ocean-text">
+            <h3 className="mb-6 text-2xl font-semibold font-orbitron text-ocean-text">
               Send us a Message
             </h3>
             
@@ -151,10 +151,10 @@ const ContactSection = () => {
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="text-center py-12"
+                className="py-12 text-center"
               >
-                <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-4" />
-                <h4 className="text-xl font-orbitron font-semibold text-ocean-text mb-2">
+                <CheckCircle className="w-16 h-16 mx-auto mb-4 text-green-400" />
+                <h4 className="mb-2 text-xl font-semibold font-orbitron text-ocean-text">
                   Message Sent!
                 </h4>
                 <p className="text-ocean-text/70">
@@ -163,9 +163,9 @@ const ContactSection = () => {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-ocean-text mb-2">
+                    <label htmlFor="name" className="block mb-2 text-sm font-medium text-ocean-text">
                       Name *
                     </label>
                     <input
@@ -175,13 +175,13 @@ const ContactSection = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-ocean-dark/50 border border-ocean-primary/30 rounded-lg text-ocean-text placeholder-ocean-text/60 focus:outline-none focus:border-ocean-primary transition-colors duration-300"
+                      className="w-full px-4 py-3 transition-colors duration-300 border rounded-lg bg-ocean-dark/50 border-ocean-primary/30 text-ocean-text placeholder-ocean-text/60 focus:outline-none focus:border-ocean-primary"
                       placeholder="Your full name"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-ocean-text mb-2">
+                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-ocean-text">
                       Email *
                     </label>
                     <input
@@ -191,14 +191,14 @@ const ContactSection = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-ocean-dark/50 border border-ocean-primary/30 rounded-lg text-ocean-text placeholder-ocean-text/60 focus:outline-none focus:border-ocean-primary transition-colors duration-300"
+                      className="w-full px-4 py-3 transition-colors duration-300 border rounded-lg bg-ocean-dark/50 border-ocean-primary/30 text-ocean-text placeholder-ocean-text/60 focus:outline-none focus:border-ocean-primary"
                       placeholder="your.email@company.com"
                     />
                   </div>
                 </div>
                 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-ocean-text mb-2">
+                  <label htmlFor="company" className="block mb-2 text-sm font-medium text-ocean-text">
                     Company
                   </label>
                   <input
@@ -207,13 +207,13 @@ const ContactSection = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-ocean-dark/50 border border-ocean-primary/30 rounded-lg text-ocean-text placeholder-ocean-text/60 focus:outline-none focus:border-ocean-primary transition-colors duration-300"
+                    className="w-full px-4 py-3 transition-colors duration-300 border rounded-lg bg-ocean-dark/50 border-ocean-primary/30 text-ocean-text placeholder-ocean-text/60 focus:outline-none focus:border-ocean-primary"
                     placeholder="Your company name"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-ocean-text mb-2">
+                  <label htmlFor="message" className="block mb-2 text-sm font-medium text-ocean-text">
                     Message *
                   </label>
                   <textarea
@@ -223,7 +223,7 @@ const ContactSection = () => {
                     onChange={handleInputChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 bg-ocean-dark/50 border border-ocean-primary/30 rounded-lg text-ocean-text placeholder-ocean-text/60 focus:outline-none focus:border-ocean-primary transition-colors duration-300 resize-none"
+                    className="w-full px-4 py-3 transition-colors duration-300 border rounded-lg resize-none bg-ocean-dark/50 border-ocean-primary/30 text-ocean-text placeholder-ocean-text/60 focus:outline-none focus:border-ocean-primary"
                     placeholder="Tell us about your interest in sustainable ocean mining..."
                   />
                 </div>
@@ -233,11 +233,11 @@ const ContactSection = () => {
                   disabled={isSubmitting}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full btn-primary flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex items-center justify-center w-full space-x-2 btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <>
-                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                      <div className="w-5 h-5 border-2 border-white rounded-full border-t-transparent animate-spin"></div>
                       <span>Sending...</span>
                     </>
                   ) : (
@@ -258,7 +258,7 @@ const ContactSection = () => {
           >
             {/* Contact Details */}
             <div>
-              <h3 className="text-2xl font-orbitron font-semibold mb-6 text-ocean-text">
+              <h3 className="mb-6 text-2xl font-semibold font-orbitron text-ocean-text">
                 Contact Information
               </h3>
               
@@ -268,13 +268,13 @@ const ContactSection = () => {
                     key={info.title}
                     href={info.action}
                     whileHover={{ scale: 1.02 }}
-                    className="flex items-start space-x-4 p-4 bg-ocean-dark/30 rounded-lg hover:bg-ocean-dark/50 transition-colors duration-300 group"
+                    className="flex items-start p-4 space-x-4 transition-colors duration-300 rounded-lg bg-ocean-dark/30 hover:bg-ocean-dark/50 group"
                   >
                     <div className="flex-shrink-0">
-                      <info.icon className="w-6 h-6 text-ocean-primary group-hover:text-ocean-accent transition-colors duration-300" />
+                      <info.icon className="w-6 h-6 transition-colors duration-300 text-ocean-primary group-hover:text-ocean-accent" />
                     </div>
                     <div>
-                      <h4 className="font-medium text-ocean-text group-hover:text-ocean-primary transition-colors duration-300">
+                      <h4 className="font-medium transition-colors duration-300 text-ocean-text group-hover:text-ocean-primary">
                         {info.title}
                       </h4>
                       {info.details.map((detail, idx) => (
@@ -290,7 +290,7 @@ const ContactSection = () => {
 
             {/* Quick Actions */}
             <div>
-              <h3 className="text-xl font-orbitron font-semibold mb-6 text-ocean-text">
+              <h3 className="mb-6 text-xl font-semibold font-orbitron text-ocean-text">
                 Quick Actions
               </h3>
               
@@ -303,12 +303,12 @@ const ContactSection = () => {
                     className={`block p-4 rounded-lg bg-gradient-to-r ${action.color} bg-opacity-10 border border-current border-opacity-20 hover:bg-opacity-20 transition-all duration-300 group`}
                   >
                     <div className="flex items-center space-x-4">
-                      <action.icon className="w-6 h-6 text-current group-hover:scale-110 transition-transform duration-300" />
+                      <action.icon className="w-6 h-6 text-current transition-transform duration-300 group-hover:scale-110" />
                       <div>
-                        <h4 className="font-medium text-ocean-text group-hover:text-current transition-colors duration-300">
+                        <h4 className="font-medium transition-colors duration-300 text-ocean-text group-hover:text-current">
                           {action.title}
                         </h4>
-                        <p className="text-sm text-ocean-text/70 group-hover:text-current/70 transition-colors duration-300">
+                        <p className="text-sm transition-colors duration-300 text-ocean-text/70 group-hover:text-current/70">
                           {action.description}
                         </p>
                       </div>
@@ -319,8 +319,8 @@ const ContactSection = () => {
             </div>
 
             {/* Office Hours */}
-            <div className="bg-ocean-dark/30 rounded-lg p-6">
-              <h4 className="font-orbitron font-semibold text-ocean-text mb-4">
+            <div className="p-6 rounded-lg bg-ocean-dark/30">
+              <h4 className="mb-4 font-semibold font-orbitron text-ocean-text">
                 Office Hours
               </h4>
               <div className="space-y-2 text-sm text-ocean-text/70">
